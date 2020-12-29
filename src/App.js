@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Root, Routes } from 'react-static';
 import { Switch, Route } from 'react-router-dom';
-import Nav from "./components/Nav.js";
+import Navbar from "./components/Navbar.js";
+import Loading from "./components/Loading.js"
+import Footer from "./components/Footer.js";
 
 import './App.css'
 
@@ -9,13 +11,13 @@ class App extends Component {
     render() {
         return (
             <Root>
-                <Nav />
-                {/* TODO: loading animation of some sort */}
-                <React.Suspense fallback={<em>Loading...</em>}>
+                <Navbar />
+                <React.Suspense fallback={<Loading />}>
                     <Switch>
                         <Route render={() => <Routes />} />
                     </Switch>
                 </React.Suspense>
+                <Footer />
             </Root>
         )
     }
