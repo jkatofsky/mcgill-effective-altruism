@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { Root, Routes } from 'react-static';
-import { Switch, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar.js";
 import Loading from "./components/Loading.js"
 import Footer from "./components/Footer.js";
 
-import './App.css'
+import './App.css';
 
 class App extends Component {
     render() {
@@ -13,9 +12,7 @@ class App extends Component {
             <Root>
                 <Navbar />
                 <React.Suspense fallback={<Loading />}>
-                    <Switch>
-                        <Route render={() => <Routes />} />
-                    </Switch>
+                    <Routes />
                 </React.Suspense>
                 <Footer />
             </Root>
@@ -23,4 +20,4 @@ class App extends Component {
     }
 }
 
-export default App
+export default App;
