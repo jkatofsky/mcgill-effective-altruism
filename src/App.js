@@ -1,41 +1,24 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Root, Routes } from 'react-static';
+import { Switch, Route } from 'react-router-dom';
+import Nav from "./components/Nav.js";
 
-import './app.css'
-import logo from './logo.png'
+import './App.css'
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <span>
-            Learn{' '}
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              React
-            </a>{' '}
-            and{' '}
-            <a
-              className="App-link"
-              href="https://react-static.js.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              React Static
-            </a>
-          </span>
-        </header>
-      </div>
-    )
-  }
+    render() {
+        return (
+            <Root>
+                <Nav />
+                {/* TODO: loading animation of some sort */}
+                <React.Suspense fallback={<em>Loading...</em>}>
+                    <Switch>
+                        <Route render={() => <Routes />} />
+                    </Switch>
+                </React.Suspense>
+            </Root>
+        )
+    }
 }
 
 export default App
