@@ -6,11 +6,11 @@ class Navbar extends Component {
         return (
             <nav>
                 <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/activities">Activities</Link>
-                <Link to="/team">Team</Link>
+                <Link to="/about-ea">About EA</Link>
+                <Link to="/our-work">Our Work</Link>
+                <Link to="/team">Our Team</Link>
+                <Link to="/connect">Connect With Us</Link>
                 <Link to="/faq">FAQ</Link>
-                <Link to="/connect">Connect</Link>
             </nav>
         )
     }
