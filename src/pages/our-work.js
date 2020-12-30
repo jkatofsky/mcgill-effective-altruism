@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default () => (
-    <p>OUR WORK</p>
+    <h2>Our Work</h2>
 );

@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default () => (
-    <p>CONNECT</p>
+    <h2>Connect With Us</h2>
 );

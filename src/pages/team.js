@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default () => (
-    <p>TEAM</p>
+    <h2>Our Team</h2>
 );
