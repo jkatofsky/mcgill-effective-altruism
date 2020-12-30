@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Root, Routes } from 'react-static';
-import Navbar from "./components/Navbar.js";
+import Navbar from "./components/Navbar";
 import Loading from "./components/Loading.js";
 import Footer from "./components/Footer.js";
 

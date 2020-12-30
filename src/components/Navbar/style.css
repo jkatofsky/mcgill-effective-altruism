@@ -1,0 +1,47 @@
+nav {
+    display: flex;
+    justify-content: center space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav span {
+    margin: 0 15px 0 15px;
+    font-size: 20px;
+}
+
+nav img {
+    margin: 15px 0 15px 0;
+    height: 70px;
+}
+
+#desktop-navbar,
+#mobile-navbar {
+    box-shadow: 0 5px 10px lightgray;
+}
+
+#desktop-navbar {
+    padding: 0 70px 0 70px;
+}
+
+#desktop-navbar #links-container {
+    width: 100%;
+}
+
+#desktop-navbar #links {
+    float: right;
+}
+
+/* TODO: also do the animation for the EA logo! */
+#desktop-navbar span {
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+}
+
+#desktop-navbar span:hover {
+    top: -6px;
+}

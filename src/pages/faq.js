@@ -6,6 +6,7 @@ import {
     AccordionItemButton,
     AccordionItemPanel,
 } from 'react-accessible-accordion';
+import "./style.css";
 
 //TODO: turn the keys/values (or, at minimum, the values) into JSX spans, so I can include bullets and links as they appear in:
 //https://github.com/rtcharity/lean-site-template/blob/master/content/faq.md
@@ -40,7 +41,7 @@ const FAQs = [
 ]
 
 export default () => (
-    <>
+    <div className="page-content">
         <h2>Frequently Asked Questions</h2>
         <Accordion allowMultipleExpanded allowZeroExpanded>
             {FAQs.map(entry => (
@@ -56,5 +57,5 @@ export default () => (
                 </AccordionItem>
             ))}
         </Accordion>
-    </>
+    </div>
 );
