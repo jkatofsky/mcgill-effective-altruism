@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from "../logo.png";
-import "./style.css";
 
 export default () => (
     <div className="page-content">
