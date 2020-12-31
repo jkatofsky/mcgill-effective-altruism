@@ -30,7 +30,7 @@ const FAQs = [
         answer: <p>No, although a higher likelihood of success is better, holding everything else equal. Some people have a strong preference for approaches that have hard empirical evidence behind them, and are skeptical of those which don’t. This is because they think our ability to predict what actions will be helpful and which won’t before they are tested is very limited. But others think the most high-impact opportunities will involve more experimental or ‘speculative’ approaches, such as scientific research or political advocacy. Across society as a whole there clearly needs to be a mixture of both.</p>
     },
     {
-        question: "Is effective altruism about making money and giving donations to charity?",
+        question: "Is effective altruism just about making money and giving donations to charity?",
         answer: <p>That’s one way you might try have the most impact, and one that people have <a href="https://80000hours.org/articles/earning-to-give/" target="_blank">explored in detail</a>, because there was existing research to build on. But other approaches, like going into politics or starting a business that provides some new useful product, might work even better for some people. This is a <a href="https://forum.effectivealtruism.org/posts/k6bBgWFdHH5hgt9RF/peter-hurford-thinks-that-a-large-proportion-of-people" target="_blank">topic of active debate</a>.</p>
     },
     {
@@ -138,10 +138,9 @@ export default () => (
         <Accordion allowMultipleExpanded allowZeroExpanded>
             {FAQs.map(entry => (
                 <AccordionItem key={FAQs.indexOf(entry)}>
-                    {/* TODO: make the headings prettier: pointer on hover, more distinct styling */}
                     <AccordionItemHeading>
-                        <AccordionItemButton>
-                            <p className="hover-raise"><b>{entry.question}</b></p>
+                        <AccordionItemButton style={{ cursor: "pointer" }}>
+                            <p className="hover-raise"><u>{entry.question}</u></p>
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>

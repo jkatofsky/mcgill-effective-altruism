@@ -20,7 +20,7 @@ export default () => (
         </p>
 
         <h3>Cause Areas</h3>
-        <p>Based on those criteria, Effective Altruism focuses on three main cause areas:</p>
+        <p>Based on those criteria, effective altruism focuses on three main cause areas:</p>
         {/* TODO: a little writeup about each cause area */}
         <h4>Extreme Poverty</h4>
         <h4>Animal Welfare</h4>
