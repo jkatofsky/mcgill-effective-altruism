@@ -32,8 +32,8 @@ h2 {
     font-size: 1.8em;
 }
 
-#home-title {
-    overflow-wrap: break-word;
+span {
+    display: inline-block;
 }
 
 img {
