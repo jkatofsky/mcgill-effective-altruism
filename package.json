@@ -13,6 +13,7 @@
     "react-accessible-accordion": "^3.3.3",
     "react-burger-menu": "^3.0.2",
     "react-dom": "^16.9.0",
+    "react-loading-skeleton": "^2.1.1",
     "react-router-dom": "^5.2.0",
     "react-static": "^7.2.0",
     "react-static-plugin-react-router": "^7.4.2",
