@@ -5,7 +5,8 @@ import Loading from "./components/Loading.js";
 import Footer from "./components/Footer";
 
 import './App.css';
-
+// TODO: add Head components to each page.
+// TODO: pass the site name globally
 class App extends Component {
     render() {
         return (

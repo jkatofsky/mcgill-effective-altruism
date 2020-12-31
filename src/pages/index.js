@@ -4,7 +4,7 @@ import logo from "../logo.png";
 export default () => (
     <div className="page-content">
         <img src={logo} alt="" style={{ height: "100px" }} />
-        <h1>
+        <h1 id="home-title">
             <span style={{ color: "#0A8399" }}>Effective Altruists</span>
         &nbsp;at&nbsp;
             <span style={{ color: "#E83C31" }}>McGill</span>

@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-import logo from '../../logo.png';
+import logo from '../../logo.png'; //TODO: special EA McGill logo instead?
 import "./style.css";
 import { slide as BurgerMenu } from 'react-burger-menu'
 
+// TODO: pass this object gobally?
 const links = [
     { name: "About EA", link: "/about-ea" },
     { name: "Our Work", link: "/our-work" },
@@ -43,6 +44,7 @@ class Navbar extends Component {
 
     render() {
 
+        //TODO: use https://reactrouter.com/web/api/NavLink to highlight current page!
         const burger = window.innerWidth <= 900;
 
         return (
@@ -53,7 +55,7 @@ class Navbar extends Component {
                         onStateChange={(state) => this.handleStateChange(state)}>
                         {links.map(entry => (
                             <Link onClick={() => this.closeMenu()}
-                                className="link burger-link"
+                                className="hover-raise link burger-link"
                                 key={entry.link} to={entry.link}>
                                 {entry.name}
                             </Link>

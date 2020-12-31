@@ -26,11 +26,14 @@ h2 {
 
 h1 {
     font-size: 3em;
-    overflow-wrap: break-word;
 }
 
 h2 {
     font-size: 1.8em;
+}
+
+#home-title {
+    overflow-wrap: break-word;
 }
 
 img {
@@ -43,6 +46,8 @@ p {
     font-weight: 300;
 }
 
+/* TODO: figure out a way to make things that hover not move their clickable area? */
+/* If you come at a link from the bottom, sometimes it will move away from your mouse too much */
 .hover-raise {
     position: relative;
     top: 0;
