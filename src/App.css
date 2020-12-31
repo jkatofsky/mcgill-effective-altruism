@@ -10,3 +10,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.hover-raise {
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+}
+
+.hover-raise:hover {
+    top: -6px;
+}

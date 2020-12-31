@@ -2,15 +2,23 @@ nav {
     display: flex;
     justify-content: center space-between;
     align-items: center;
+    padding: 0 5% 0 5%;
+    box-shadow: 0 5px 10px lightgray;
 }
 
-nav a {
+.link {
+    color: rgb(75, 75, 75);
     text-decoration: none;
 }
 
-nav span {
+.desktop-link {
     margin: 0 15px 0 15px;
     font-size: 20px;
+}
+
+.burger-link {
+    margin: 15px 0 15px 0;
+    font-size: 25px;
 }
 
 nav img {
@@ -18,30 +26,49 @@ nav img {
     height: 70px;
 }
 
-#desktop-navbar,
-#mobile-navbar {
-    box-shadow: 0 5px 10px lightgray;
-}
-
-#desktop-navbar {
-    padding: 0 70px 0 70px;
-}
-
-#desktop-navbar #links-container {
+#desktop-links-container {
     width: 100%;
 }
 
-#desktop-navbar #links {
+#desktop-links {
     float: right;
 }
 
-/* TODO: also do the animation for the EA logo! */
-#desktop-navbar span {
-    position: relative;
-    top: 0;
-    transition: top ease 0.3s;
+.bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
 }
 
-#desktop-navbar span:hover {
-    top: -6px;
+.bm-burger-bars {
+    background: #373a47;
+}
+
+.bm-cross-button {
+    height: 100px;
+    width: 100px;
+}
+
+.bm-cross {
+    background: gray;
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+.bm-menu {
+    background: #ffffff;
+    padding: 2.5em 1em 0;
+}
+
+.bm-item-list {
+    width: max-content;
+}
+
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.4);
 }

@@ -2,26 +2,82 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import logo from '../../logo.png';
 import "./style.css";
+import { slide as BurgerMenu } from 'react-burger-menu'
+
+const links = [
+    { name: "About EA", link: "/about-ea" },
+    { name: "Our Work", link: "/our-work" },
+    { name: "Our Team", link: "/team" },
+    { name: "Connect With Us", link: "/connect" },
+    { name: "FAQs", link: "/faq" },
+]
 
 class Navbar extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            menuOpen: false
+        }
+    }
+
+    handleStateChange(state) {
+        this.setState({ menuOpen: state.isOpen })
+    }
+
+    closeMenu() {
+        this.setState({ menuOpen: false })
+    }
+
+    componentDidMount() {
+        window.addEventListener('resize', this.handleResize);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleResize);
+    }
+
+    handleResize = () => {
+        this.forceUpdate();
+    };
+
     render() {
+
+        const burger = window.innerWidth <= 900;
+
         return (
-
-            <div id="desktop-navbar">
+            <>
+                {burger &&
+                    <BurgerMenu width={250} right itemListElement="div" disableAutoFocus
+                        isOpen={this.state.menuOpen}
+                        onStateChange={(state) => this.handleStateChange(state)}>
+                        {links.map(entry => (
+                            <Link onClick={() => this.closeMenu()}
+                                className="link burger-link"
+                                key={entry.link} to={entry.link}>
+                                {entry.name}
+                            </Link>
+                        ))}
+                    </BurgerMenu>
+                }
                 <nav>
-                    <Link to="/"><img src={logo} alt="" /></Link>
-                    <div id="links-container">
-                        <div id="links">
-                            <Link to="/about-ea"><span>About EA</span></Link>
-                            <Link to="/our-work"><span>Our Work</span></Link>
-                            <Link to="/team"><span>Our Team</span></Link>
-                            <Link to="/connect"><span>Connect With Us</span></Link>
-                            <Link to="/faq"><span>FAQ</span></Link>
+                    <Link className="hover-raise" to="/">
+                        <img src={logo} alt="" />
+                    </Link>
+                    {!burger &&
+                        <div id="desktop-links-container">
+                            <div id="desktop-links">
+                                {links.map(entry => (
+                                    <Link className="hover-raise link desktop-link"
+                                        key={entry.link} to={entry.link}>
+                                        {entry.name}
+                                    </Link>
+                                ))}
+                            </div>
                         </div>
-                    </div>
+                    }
                 </nav>
-            </div >
-
+            </>
         )
     }
 }
