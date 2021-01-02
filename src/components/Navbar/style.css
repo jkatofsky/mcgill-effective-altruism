@@ -11,6 +11,28 @@ nav {
     text-decoration: none;
 }
 
+.active-link {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: #CCCCCC;
+}
+
+#nav-logo-container {
+    padding: 15px 0 15px 0;
+}
+
+.active-link #nav-logo-container {
+    padding: 15px 0 11px 0;
+}
+
+#nav-logo-container img {
+    height: 70px;
+}
+
+.active-link #nav-logo-container img {
+    border-bottom: 4px solid #CCCCCC;
+}
+
 .desktop-link {
     margin: 0 15px 0 15px;
     font-size: 20px;
@@ -19,11 +41,6 @@ nav {
 .burger-link {
     margin: 15px 0 15px 0;
     font-size: 25px;
-}
-
-nav img {
-    margin: 15px 0 15px 0;
-    height: 70px;
 }
 
 #desktop-links-container {

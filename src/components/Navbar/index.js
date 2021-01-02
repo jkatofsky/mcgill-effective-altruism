@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../../logo.png'; //TODO: special EA McGill logo instead?
 import "./style.css";
 import { slide as BurgerMenu } from 'react-burger-menu'
@@ -44,7 +44,6 @@ class Navbar extends Component {
 
     render() {
 
-        //TODO: use https://reactrouter.com/web/api/NavLink to highlight current page!
         const burger = window.innerWidth <= 900;
 
         return (
@@ -54,26 +53,32 @@ class Navbar extends Component {
                         isOpen={this.state.menuOpen}
                         onStateChange={(state) => this.handleStateChange(state)}>
                         {links.map(entry => (
-                            <Link onClick={() => this.closeMenu()}
+                            <NavLink onClick={() => this.closeMenu()}
+                                activeClassName="active-link"
                                 className="hover-raise link burger-link"
                                 key={entry.link} to={entry.link}>
                                 {entry.name}
-                            </Link>
+                            </NavLink>
                         ))}
                     </BurgerMenu>
                 }
                 <nav>
-                    <Link className="hover-raise" to="/">
-                        <img src={logo} alt="" />
-                    </Link>
+                    <NavLink
+                        activeClassName="active-link"
+                        className="hover-raise" exact to="/">
+                        <div id="nav-logo-container">
+                            <img src={logo} alt="" />
+                        </div>
+                    </NavLink>
                     {!burger &&
                         <div id="desktop-links-container">
                             <div id="desktop-links">
                                 {links.map(entry => (
-                                    <Link className="hover-raise link desktop-link"
+                                    <NavLink activeClassName="active-link"
+                                        className="hover-raise link desktop-link"
                                         key={entry.link} to={entry.link}>
                                         {entry.name}
-                                    </Link>
+                                    </NavLink>
                                 ))}
                             </div>
                         </div>
