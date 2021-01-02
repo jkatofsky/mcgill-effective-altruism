@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 export default () => (
-    <Fragment>
+    <>
         <h2>Our Work</h2>
-    </Fragment>
+    </>
 );
