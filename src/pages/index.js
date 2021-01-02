@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from "../logo.png";
+import PageHead from '../components/PageHead.js';
 
 export default () => (
     <>
+        <PageHead />
         <img src={logo} alt="" style={{ height: "100px" }} />
         <h1>
             <span style={{ color: "#0A8399" }}>Effective Altruists</span>

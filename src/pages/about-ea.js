@@ -1,7 +1,9 @@
 import React from 'react';
+import PageHead from '../components/PageHead.js';
 
 export default () => (
     <>
+        <PageHead pageTitle="About EA" />
         {/* TODO: throughout this section, provide links to more thorough EA resources*/}
         <h2>About Effective Altruism</h2>
         <h3>Introduction</h3>

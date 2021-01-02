@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSiteData, Head } from 'react-static';
 
 export default () => (
     <>
