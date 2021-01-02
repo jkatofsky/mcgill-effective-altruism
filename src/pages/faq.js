@@ -44,7 +44,7 @@ const FAQs = [
     },
     {
         question: "Have effective altruist researchers looked into [insert cause here]?",
-        answer: <p>Maybe, but maybe not. There are thousands of possible ways to have a large impact and it is taking time to look into them thoroughly and do proper comparisons. The coverage of our research is growing every year though, as more people work on cause prioritisation research. The websites to search to see if your organisation or cause of interest has been discussed include:
+        answer: <><p>Maybe, but maybe not. There are thousands of possible ways to have a large impact and it is taking time to look into them thoroughly and do proper comparisons. The coverage of our research is growing every year though, as more people work on cause prioritisation research. The websites to search to see if your organisation or cause of interest has been discussed include:</p>
             <ul>
                 <li><a href="https://www.givewell.org/" target="_blank">GiveWell</a></li>
                 <li><a href="http://www.80000hours.org/" target="_blank">80,000 Hours</a></li>
@@ -53,7 +53,7 @@ const FAQs = [
                 <li><a href="http://globalprioritiesproject.org/" target="_blank">Global Priorities Project</a></li>
                 <li><a href="http://www.copenhagenconsensus.com/" target="_blank">Copenhagen Consensus</a></li>
             </ul>
-        Or, try searching in google for ‘effective altruism’ and the cause you’re interested in.</p>
+            <p>Or, try searching in google for ‘effective altruism’ and the cause you’re interested in.</p></>
     },
     {
         question: "What if everyone focused on this one cause or charity you’re suggesting? Wouldn’t that be silly?",
@@ -120,16 +120,16 @@ const FAQs = [
         answer: <p>Yes, there are effective altruists from a variety of religious backgrounds. Many religions have historically incorporated charity or tithing and promoted helping others, and religious effective altruists think it’s important to observe these duties as best they can. That said, there are also many non-religious effective altruists.</p>
     },
     {
-        question: "Why should I join the effective altruist movement? I’m already planning on doing a lot of good on my own, and I’m not sure your approach is best.", answer: <p>We are a friendly, motivated and well-read bunch of people. Joining the movement has a number of advantages to going in on your own:
+        question: "Why should I join the effective altruist movement? I’m already planning on doing a lot of good on my own, and I’m not sure your approach is best.", answer: <><p>We are a friendly, motivated and well-read bunch of people. Joining the movement has a number of advantages to going in on your own:</p>
 
-        <ul>
+            <ul>
                 <li>There are many skilled people who might join you to help with your projects.</li>
                 <li>If you offer good criticism or suggestions, you have the potential to influence the rest of us to adopt whatever approach you think is more effective.</li>
                 <li>We can pool our resources to conduct research that can help us all figure out how to have more impact.</li>
                 <li>You can learn by watching how other people in the community think or behave. It’s nice to have like-minded friends, and they might keep you motivated when things are hard.</li>
             </ul>
 
-        That said, one can engage in effective altruism without taking any interest in the community. If you do a lot of good without us, that’s great!</p>
+            <p>That said, one can engage in effective altruism without taking any interest in the community. If you do a lot of good without us, that’s great!</p></>
     }
 ]
 

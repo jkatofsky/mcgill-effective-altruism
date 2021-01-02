@@ -1,8 +1,9 @@
 import React from 'react';
-import { useSiteData, Head } from 'react-static';
+import PageHead from "../components/PageHead.js";
 
 export default () => (
     <>
+        <PageHead pageTitle="Our Team" />
         <h2>Our Team</h2>
     </>
 );

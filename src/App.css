@@ -41,7 +41,8 @@ img {
     margin: 0 auto;
 }
 
-p {
+p,
+ul {
     font-size: large;
     font-weight: 300;
 }

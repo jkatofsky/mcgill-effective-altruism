@@ -12,14 +12,13 @@ export default () => (
         <p>Effective altruism is a response to this challenge. It is a research field which uses high-quality evidence and careful reasoning to work out how to help others as much as possible. It is also a community of people taking these answers seriously, by focusing their efforts on the most promising solutions to the world's most pressing problems.</p>
 
         <h3>The Framework</h3>
-        <p>In general, we evaluate the most worthwhile causes on the following criteria:
+        <p>In general, we evaluate the most worthwhile causes on the following criteria:</p>
 
         <ul>
-                <li><i>Great in scale</i> (it affects many lives, by a great amount)</li>
-                <li><i>Highly neglected</i> (few other people are working on addressing it)</li>
-                <li><i>Highly tractable</i> (additional resources will do a great deal to address it)</li>
-            </ul>
-        </p>
+            <li><i>Great in scale</i> (it affects many lives, by a great amount)</li>
+            <li><i>Highly neglected</i> (few other people are working on addressing it)</li>
+            <li><i>Highly tractable</i> (additional resources will do a great deal to address it)</li>
+        </ul>
 
         <h3>Cause Areas</h3>
         <p>Based on those criteria, effective altruism focuses on three main cause areas:</p>
