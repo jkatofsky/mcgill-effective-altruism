@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 export default () => (
-    <div className="page-content">
+    <Fragment>
         {/* TODO: throughout this section, provide links to more thorough EA resources*/}
         <h2>About Effective Altruism</h2>
         <h3>Introduction</h3>
@@ -28,5 +28,5 @@ export default () => (
 
         {/* TODO: summarize the different ways in which one can take action */}
         <h3>Taking Action</h3>
-    </div>
+    </Fragment>
 );

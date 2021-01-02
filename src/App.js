@@ -12,9 +12,11 @@ class App extends Component {
         return (
             <Root>
                 <Navbar />
-                <React.Suspense fallback={<Loading />}>
-                    <Routes />
-                </React.Suspense>
+                <div className="page-content">
+                    <React.Suspense fallback={<Loading />}>
+                        <Routes />
+                    </React.Suspense>
+                </div>
                 <Footer />
             </Root>
         )

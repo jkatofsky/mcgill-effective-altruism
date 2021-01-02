@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
     Accordion,
     AccordionItem,
@@ -133,7 +133,7 @@ const FAQs = [
 ]
 
 export default () => (
-    <div className="page-content">
+    <Fragment>
         <h2>Frequently Asked Questions</h2>
         <Accordion allowMultipleExpanded allowZeroExpanded>
             {FAQs.map(entry => (
@@ -149,5 +149,5 @@ export default () => (
                 </AccordionItem>
             ))}
         </Accordion>
-    </div>
+    </Fragment>
 );

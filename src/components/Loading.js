@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import Skeleton from 'react-loading-skeleton';
 
 class Loading extends Component {
     render() {
         return (
-            <div className="page-content">
+            <Fragment>
                 <h1><Skeleton /></h1>
                 <Skeleton count={20} />
-            </div>
+            </Fragment>
         );
     }
 }
