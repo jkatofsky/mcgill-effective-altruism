@@ -1,5 +1,9 @@
 import React from 'react';
+import PageHead from '../components/PageHead.js';
 
 export default () => (
-    <h2>Connect With Us</h2>
+    <>
+        <PageHead pageTitle="Connect With Us" />
+        <h2>Connect With Us</h2>
+    </>
 );
