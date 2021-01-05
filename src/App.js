@@ -5,7 +5,8 @@ import Loading from "./components/Loading.js";
 import Footer from "./components/Footer";
 
 import './App.css';
-// TODO: add a favicon
+// TODO: address the myriad errors when trying to actually build the site...
+// TODO: allow routing to specific sections of pages with #s in the links?
 class App extends Component {
     render() {
         return (

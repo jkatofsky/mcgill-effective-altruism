@@ -2,35 +2,27 @@ nav {
     display: flex;
     justify-content: center space-between;
     align-items: center;
-    padding: 0 5% 0 5%;
+    padding: 15px 5% 15px 5%;
     box-shadow: 0 5px 10px lightgray;
 }
 
-.link {
+.text-link {
     color: rgb(75, 75, 75);
     text-decoration: none;
 }
 
+.link {
+    width: max-content;
+    margin-bottom: 4px;
+}
+
 .active-link {
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    text-decoration-color: #CCCCCC;
-}
-
-#nav-logo-container {
-    padding: 15px 0 15px 0;
-}
-
-.active-link #nav-logo-container {
-    padding: 15px 0 11px 0;
-}
-
-#nav-logo-container img {
-    height: 70px;
-}
-
-.active-link #nav-logo-container img {
+    margin-bottom: 0px;
     border-bottom: 4px solid #CCCCCC;
+}
+
+nav img {
+    height: 70px;
 }
 
 .desktop-link {
@@ -64,8 +56,9 @@ nav {
 }
 
 .bm-cross-button {
-    height: 100px;
-    width: 100px;
+    transform: scale(2) !important;
+    top: 20px !important;
+    right: 20px !important;
 }
 
 .bm-cross {
@@ -79,7 +72,7 @@ nav {
 
 .bm-menu {
     background: #ffffff;
-    padding: 2.5em 1em 0;
+    padding: 1em 1em 0;
 }
 
 .bm-item-list {

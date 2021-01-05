@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 
+// TODO: also include social media links here?
 class Footer extends Component {
     render() {
         return (

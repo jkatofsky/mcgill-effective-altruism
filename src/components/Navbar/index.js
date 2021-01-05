@@ -4,7 +4,6 @@ import logo from '../../logo.png'; //TODO: special EA McGill logo instead?
 import "./style.css";
 import { slide as BurgerMenu } from 'react-burger-menu'
 
-// TODO: pass this object gobally?
 const links = [
     { name: "About EA", link: "/about-ea" },
     { name: "Our Work", link: "/our-work" },
@@ -55,7 +54,7 @@ class Navbar extends Component {
                         {links.map(entry => (
                             <NavLink onClick={() => this.closeMenu()}
                                 activeClassName="active-link"
-                                className="hover-raise link burger-link"
+                                className="hover-raise text-link link burger-link"
                                 key={entry.link} to={entry.link}>
                                 {entry.name}
                             </NavLink>
@@ -65,17 +64,15 @@ class Navbar extends Component {
                 <nav>
                     <NavLink
                         activeClassName="active-link"
-                        className="hover-raise" exact to="/">
-                        <div id="nav-logo-container">
-                            <img src={logo} alt="" />
-                        </div>
+                        className="hover-raise link" exact to="/">
+                        <img src={logo} alt="" />
                     </NavLink>
                     {!burger &&
                         <div id="desktop-links-container">
                             <div id="desktop-links">
                                 {links.map(entry => (
                                     <NavLink activeClassName="active-link"
-                                        className="hover-raise link desktop-link"
+                                        className="hover-raise text-link link desktop-link"
                                         key={entry.link} to={entry.link}>
                                         {entry.name}
                                     </NavLink>
