@@ -5,7 +5,9 @@ import PageHead from '../components/PageHead.js';
 export default () => (
     <>
         <PageHead />
-        <img src={logo} alt="" style={{ height: "100px" }} />
+        {/* TODO: these inline styles are icky :( */}
+        <img src={logo} alt=""
+            style={{ height: "100px", display: 'block', margin: '15px auto 0 auto' }} />
         <h1>
             <span style={{ color: "#0A8399" }}>Effective Altruists</span>
             <span>&nbsp;at&nbsp;</span>
