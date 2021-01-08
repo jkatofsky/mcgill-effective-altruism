@@ -13,7 +13,11 @@ const links = [
     { name: "FAQs", link: "/faq" },
 ]
 
-// TODO: on prod, on my actual mobile device (not chrome's emulation), burger icon is too high up, and bar it too tall
+// TODO: on prod, on my actual mobile device (not chrome's emulation), burger icon is too high up, and nav bar is too tall
+// TODO: Centred EA logo in burger menu above other links? (Make jsx variable out of the link-wrapped image)
+// TODO: just check if window is defined instead of this silly package?
+// TODO: Backdrop not dimming on burger menu on prod.
+
 class Navbar extends Component {
 
     constructor(props) {
@@ -56,7 +60,7 @@ class Navbar extends Component {
                         {links.map(entry => (
                             <NavLink onClick={() => this.closeMenu()}
                                 activeClassName="active-link"
-                                className="hover-raise text-link link burger-link"
+                                className="text-link link burger-link"
                                 key={entry.link} to={entry.link}>
                                 {entry.name}
                             </NavLink>
@@ -66,7 +70,7 @@ class Navbar extends Component {
                 <nav>
                     <NavLink
                         activeClassName="active-link"
-                        className="hover-raise link" exact to="/">
+                        className={`${!burger && 'hover-raise'} link`} exact to="/">
                         <img src={logo} alt="" />
                     </NavLink>
                     {!burger &&

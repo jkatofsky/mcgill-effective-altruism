@@ -1,0 +1,9 @@
+.question {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.question p {
+    font-weight: 400;
+    font-size: larger;
+}

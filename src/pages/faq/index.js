@@ -6,7 +6,9 @@ import {
     AccordionItemButton,
     AccordionItemPanel,
 } from 'react-accessible-accordion';
-import PageHead from '../components/PageHead.js';
+import PageHead from '../../components/PageHead.js';
+import "./style.css";
+
 
 //TODO: incorporate the different wordings found here: https://www.effectivealtruism.org/faqs-criticism-objections/
 const FAQs = [
@@ -142,12 +144,12 @@ export default () => (
             {FAQs.map(entry => (
                 <AccordionItem key={FAQs.indexOf(entry)}>
                     <AccordionItemHeading>
-                        <AccordionItemButton style={{ cursor: "pointer" }}>
-                            <p className="hover-raise"><u>{entry.question}</u></p>
+                        <AccordionItemButton className="question">
+                            <p>{entry.question}</p>
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
-                        {entry.answer}
+                        <p>{entry.answer}</p>
                     </AccordionItemPanel>
                 </AccordionItem>
             ))}
