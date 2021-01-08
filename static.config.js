@@ -6,6 +6,8 @@ import React from 'react';
 //https://github.com/react-static/react-static/blob/master/docs/config.md#siteRoot
 
 export default {
+    //TODO: pull some of this meta information out to varaibles
+    //inspiration: https://github.com/nathanpower/wordflow-site/blob/master/src/Document.jsx
     Document: ({
         Html,
         Head,
@@ -41,6 +43,6 @@ export default {
                 location: path.resolve('./src/pages'),
             },
         ],
-        require.resolve('react-static-plugin-react-router'),
+        require.resolve('react-static-plugin-reach-router'),
     ]
 }

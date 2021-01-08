@@ -1,8 +1,23 @@
 import React, { Component } from "react";
-import { NavLink } from 'react-router-dom';
+import { Link } from '@reach/router';
 import logo from '../../logo.png'; //TODO: special EA McGill logo instead?
 import "./style.css";
-import { slide as BurgerMenu } from 'react-burger-menu'
+import { slide as BurgerMenu } from 'react-burger-menu';
+import root from 'window-or-global';
+
+const NavLink = props => (
+    <Link
+        {...props}
+        getProps={({ isCurrent }) => {
+            return {
+                className:
+                    isCurrent ?
+                        props.className + " active-link" :
+                        props.className
+            };
+        }}
+    />
+);
 
 const links = [
     { name: "About EA", link: "/about-ea" },
@@ -30,11 +45,11 @@ class Navbar extends Component {
     }
 
     componentDidMount() {
-        window.addEventListener('resize', this.handleResize);
+        root.addEventListener('resize', this.handleResize);
     }
 
     componentWillUnmount() {
-        window.removeEventListener('resize', this.handleResize);
+        root.removeEventListener('resize', this.handleResize);
     }
 
     handleResize = () => {
@@ -43,7 +58,7 @@ class Navbar extends Component {
 
     render() {
 
-        const burger = window.innerWidth <= 900;
+        const burger = root.innerWidth <= 900;
 
         return (
             <>
@@ -53,7 +68,6 @@ class Navbar extends Component {
                         onStateChange={(state) => this.handleStateChange(state)}>
                         {links.map(entry => (
                             <NavLink onClick={() => this.closeMenu()}
-                                activeClassName="active-link"
                                 className="hover-raise text-link link burger-link"
                                 key={entry.link} to={entry.link}>
                                 {entry.name}
@@ -63,15 +77,14 @@ class Navbar extends Component {
                 }
                 <nav>
                     <NavLink
-                        activeClassName="active-link"
-                        className="hover-raise link" exact to="/">
+                        className="hover-raise link" to="/">
                         <img src={logo} alt="" />
                     </NavLink>
                     {!burger &&
                         <div id="desktop-links-container">
                             <div id="desktop-links">
                                 {links.map(entry => (
-                                    <NavLink activeClassName="active-link"
+                                    <NavLink
                                         className="hover-raise text-link link desktop-link"
                                         key={entry.link} to={entry.link}>
                                         {entry.name}

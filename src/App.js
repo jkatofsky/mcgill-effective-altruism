@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import { Root, Routes } from 'react-static';
+import { Router } from '@reach/router';
 import Navbar from "./components/Navbar";
 import Loading from "./components/Loading.js";
 import Footer from "./components/Footer";
 
 import './App.css';
-// TODO: address the myriad errors when trying to actually build the site...
-// TODO: allow routing to specific sections of pages with #s in the links?
+// TODO: anchor routing?
+// TODO: nice fade-down animation on route switch?
+// https://github.com/react-static/react-static/blob/master/docs/guides/animated-routes.md
+
 class App extends Component {
     render() {
         return (
@@ -14,7 +17,11 @@ class App extends Component {
                 <Navbar />
                 <div className="page-content">
                     <React.Suspense fallback={<Loading />}>
-                        <Routes />
+                        {/* TODO: the primary=false is hacky way to stop the auto scroll */}
+                        {/* https://stackoverflow.com/questions/53058110/stop-reach-router-scrolling-down-the-page-after-navigating-to-new-page */}
+                        <Router primary={false}>
+                            <Routes default />
+                        </Router>
                     </React.Suspense>
                 </div>
                 <Footer />
