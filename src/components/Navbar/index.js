@@ -13,10 +13,8 @@ const links = [
     { name: "FAQs", link: "/faq" },
 ]
 
-// TODO: on prod, on my actual mobile device (not chrome's emulation), burger icon is too high up, and nav bar is too tall
 // TODO: Centred EA logo in burger menu above other links? (Make jsx variable out of the link-wrapped image)
-// TODO: just check if window is defined instead of this silly package?
-// TODO: Backdrop not dimming on burger menu on prod.
+// TODO: refactor the state management in this component
 
 class Navbar extends Component {
 
@@ -52,7 +50,7 @@ class Navbar extends Component {
         const burger = root.innerWidth <= 900;
 
         return (
-            <>
+            <div>
                 {burger &&
                     <BurgerMenu width={250} right itemListElement="div" disableAutoFocus
                         isOpen={this.state.menuOpen}
@@ -88,7 +86,7 @@ class Navbar extends Component {
                         </div>
                     }
                 </nav>
-            </>
+            </div>
         )
     }
 }

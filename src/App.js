@@ -13,13 +13,13 @@ class App extends Component {
     render() {
         return (
             <Root>
-                <Navbar />
-                <div className="page-content">
-                    <React.Suspense fallback={<Loading />}>
+                <React.Suspense fallback={<Loading />}>
+                    <Navbar />
+                    <div className="page-content">
                         <Routes />
-                    </React.Suspense>
-                </div>
-                <Footer />
+                    </div>
+                    <Footer />
+                </React.Suspense>
             </Root>
         )
     }
