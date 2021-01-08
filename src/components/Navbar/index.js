@@ -27,6 +27,8 @@ const links = [
     { name: "FAQs", link: "/faq" },
 ]
 
+// TODO: on prod, on my actual mobile device (not chrome's emulation), burger icon is too high up, and bar it too tall
+// TODO: on prod, active-link class is not being removed sometimes when clicking away from Link
 class Navbar extends Component {
 
     constructor(props) {
