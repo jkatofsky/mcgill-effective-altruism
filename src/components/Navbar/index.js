@@ -1,23 +1,9 @@
 import React, { Component } from "react";
-import { Link } from '@reach/router';
+import { NavLink } from 'react-router-dom';
 import logo from '../../logo.png'; //TODO: special EA McGill logo instead?
 import "./style.css";
 import { slide as BurgerMenu } from 'react-burger-menu';
 import root from 'window-or-global';
-
-const NavLink = props => (
-    <Link
-        {...props}
-        getProps={({ isCurrent }) => {
-            return {
-                className:
-                    isCurrent ?
-                        props.className + " active-link" :
-                        props.className
-            };
-        }}
-    />
-);
 
 const links = [
     { name: "About EA", link: "/about-ea" },
@@ -28,7 +14,6 @@ const links = [
 ]
 
 // TODO: on prod, on my actual mobile device (not chrome's emulation), burger icon is too high up, and bar it too tall
-// TODO: on prod, active-link class is not being removed sometimes when clicking away from Link
 class Navbar extends Component {
 
     constructor(props) {
@@ -70,6 +55,7 @@ class Navbar extends Component {
                         onStateChange={(state) => this.handleStateChange(state)}>
                         {links.map(entry => (
                             <NavLink onClick={() => this.closeMenu()}
+                                activeClassName="active-link"
                                 className="hover-raise text-link link burger-link"
                                 key={entry.link} to={entry.link}>
                                 {entry.name}
@@ -79,7 +65,8 @@ class Navbar extends Component {
                 }
                 <nav>
                     <NavLink
-                        className="hover-raise link" to="/">
+                        activeClassName="active-link"
+                        className="hover-raise link" exact to="/">
                         <img src={logo} alt="" />
                     </NavLink>
                     {!burger &&
@@ -87,6 +74,7 @@ class Navbar extends Component {
                             <div id="desktop-links">
                                 {links.map(entry => (
                                     <NavLink
+                                        activeClassName="active-link"
                                         className="hover-raise text-link link desktop-link"
                                         key={entry.link} to={entry.link}>
                                         {entry.name}

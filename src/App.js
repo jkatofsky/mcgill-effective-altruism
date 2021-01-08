@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Root, Routes } from 'react-static';
-import { Router } from '@reach/router';
 import Navbar from "./components/Navbar";
 import Loading from "./components/Loading.js";
 import Footer from "./components/Footer";
@@ -17,11 +16,7 @@ class App extends Component {
                 <Navbar />
                 <div className="page-content">
                     <React.Suspense fallback={<Loading />}>
-                        {/* TODO: the primary=false is hacky way to stop the auto scroll */}
-                        {/* https://stackoverflow.com/questions/53058110/stop-reach-router-scrolling-down-the-page-after-navigating-to-new-page */}
-                        <Router primary={false}>
-                            <Routes default />
-                        </Router>
+                        <Routes />
                     </React.Suspense>
                 </div>
                 <Footer />
