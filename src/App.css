@@ -48,8 +48,16 @@ span {
     display: inline-block;
 }
 
-.body-img {
+img {
     display: block;
+}
+
+#main-logo {
+    height: 100px;
+    margin: 15px auto 0 auto;
+}
+
+.body-img {
     margin: 0 auto;
     width: 400px;
     max-width: 100%;
@@ -62,10 +70,13 @@ ul {
     font-weight: 300;
 }
 
-/* TODO: figure out a way to make things that hover not move their clickable area?
+/* 
+TODO: revisit nav link hover animation:s 
+https://stackoverflow.com/questions/26726436/css-bottom-border-transition-expand-from-middle
+
+if not that, figure out a way to make things that hover not move their clickable area?
 If you come at a link from the bottom, sometimes it will move away from your mouse too much.
-Could do this animation instead for the NavLinks + no animation for the FAQs
-https://stackoverflow.com/questions/26726436/css-bottom-border-transition-expand-from-middle*/
+*/
 .hover-raise {
     position: relative;
     top: 0;

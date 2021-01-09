@@ -5,15 +5,14 @@ import PageHead from '../components/PageHead.js';
 export default () => (
     <>
         <PageHead />
-        {/* TODO: these inline styles are icky :( */}
-        <img src={logo} alt=""
-            style={{ height: "100px", display: 'block', margin: '15px auto 0 auto' }} />
+
+        <img src={logo} alt="" id="main-logo" />
         <h1>
             <span style={{ color: "#0A8399" }}>Effective Altruists</span>
             <span>&nbsp;at&nbsp;</span>
             <span style={{ color: "#E83C31" }}>McGill</span>
         </h1>
-        <h2 style={{ fontStyle: "italic" }}>Doing good better.</h2>
+        <h2 style={{ fontStyle: 'italic' }}>Doing good better.</h2>
 
         <p>Effective altruism is about answering one simple question: how can we use our resources to help others the most? We use evidence and careful analysis to find the very best causes to work on.</p>
 

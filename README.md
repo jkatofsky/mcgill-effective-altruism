@@ -1,6 +1,6 @@
 <img src="src/logo.png" alt="drawing" width="80"/>
 
-<img src="https://api.netlify.com/api/v1/badges/4d76ef8a-6e14-4cbc-9d42-60ac6c40a5e3/deploy-status" float="right">
+<img src="https://api.netlify.com/api/v1/badges/4d76ef8a-6e14-4cbc-9d42-60ac6c40a5e3/deploy-status">
 
 # Effective Altruists at McGill
 
@@ -38,7 +38,7 @@ react-static has [problems when used with NPM](https://github.com/react-static/r
 To build the site and host the result locally, run
 
 ```bash
-yarn stage
+yarn stage && yarn serve
 ```
 
 or, to simply generate the `dist` folder for hosting elsewhere,

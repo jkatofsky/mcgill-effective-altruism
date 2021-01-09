@@ -15,6 +15,7 @@ const links = [
 
 // TODO: Centred EA logo in burger menu above other links? (Make jsx variable out of the link-wrapped image)
 // TODO: refactor the state management in this component
+// TODO: verify that the desktop links aren't flashing before the burger renders on mobile
 
 class Navbar extends Component {
 
