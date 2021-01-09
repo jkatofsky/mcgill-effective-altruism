@@ -57,11 +57,17 @@ img {
     margin: 15px auto 0 auto;
 }
 
-.body-img {
+figure img {
     margin: 0 auto;
     width: 400px;
     max-width: 100%;
     border-radius: 10px;
+}
+
+figure figcaption {
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
 }
 
 p,

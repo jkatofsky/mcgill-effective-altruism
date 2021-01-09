@@ -1,8 +1,7 @@
 .question {
+    display: inline-block;
+    margin-top: 15px;
     cursor: pointer;
     text-decoration: underline;
-}
-
-.question p {
     font-size: larger;
 }

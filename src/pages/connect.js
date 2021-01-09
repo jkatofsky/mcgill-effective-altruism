@@ -12,7 +12,7 @@ export default () => (
                 <Col sm={12} md={5}>
                     <p>We would love to hear from you! You can email us at:
                      <br />
-                        <a href="mailto:mcgilleffectivealtruists@gmail.com"><h4>mcgilleffectivealtruists@gmail.com</h4></a>
+                        <a href="mailto:mcgilleffectivealtruists@gmail.com"><h4 style={{ display: 'inline-block' }}>mcgilleffectivealtruists@gmail.com</h4></a>
                     </p>
                 </Col>
 

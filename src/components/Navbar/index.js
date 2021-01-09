@@ -5,6 +5,7 @@ import "./style.css";
 import { slide as BurgerMenu } from 'react-burger-menu';
 import root from 'window-or-global';
 
+// TODO: make this come from the global route data?
 const links = [
     { name: "About EA", link: "/about-ea" },
     { name: "Our Work", link: "/our-work" },

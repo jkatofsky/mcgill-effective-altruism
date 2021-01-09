@@ -145,11 +145,11 @@ export default () => (
                 <AccordionItem key={FAQs.indexOf(entry)}>
                     <AccordionItemHeading>
                         <AccordionItemButton className="question">
-                            <p>{entry.question}</p>
+                            {entry.question}
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
-                        <p>{entry.answer}</p>
+                        {entry.answer}
                     </AccordionItemPanel>
                 </AccordionItem>
             ))}
