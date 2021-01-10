@@ -17,6 +17,10 @@ body {
     margin: auto;
 }
 
+a {
+    font-weight: 500;
+    color: #0A889E;
+}
 
 h1,
 h2 {
@@ -77,7 +81,7 @@ ul {
 }
 
 /* 
-TODO: revisit nav link hover animation:s 
+TODO: revisit nav link hover animations 
 https://stackoverflow.com/questions/26726436/css-bottom-border-transition-expand-from-middle
 
 if not that, figure out a way to make things that hover not move their clickable area?

@@ -8,9 +8,9 @@ export default () => (
     <>
         <PageHead pageTitle="Our Work" />
         <h2>Our Work</h2>
-        <h3>Fellowship</h3>
+        <h3>Effective Altruism Fellowship</h3>
         <Container fluid style={{ padding: 0 }}>
-            <Row nogutter>
+            <Row align="start" justify="start" nogutter>
                 <Col sm={12} md={6}>
                     <p>Every fall semester, we run an effective altruism fellowship. Each week during the program, the cohort of fellows will read about a certain topic within effective altruism and then meets to discuss it.</p>
 

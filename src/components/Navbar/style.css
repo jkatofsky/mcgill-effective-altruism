@@ -8,6 +8,7 @@ nav {
 
 .text-link {
     color: rgb(75, 75, 75);
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -18,7 +19,8 @@ nav {
 
 .active-link {
     margin-bottom: 0px;
-    border-bottom: 4px solid #CCCCCC;
+    font-weight: 500;
+    border-bottom: 4px solid #cccccc;
 }
 
 nav img {
