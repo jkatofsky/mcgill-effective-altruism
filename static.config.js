@@ -23,6 +23,8 @@ export default {
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
+                <meta name="keywords" content="Effective Altruism, EA, Effective Giving, McGill" />
+
                 <meta name="description" content="Doing good better. The McGill chapter of the effective altruism movement." />
                 <meta name="twitter:card" value="Doing good better. The McGill chapter of the effective altruism movement." />
                 <meta property="og:description" content="Doing good better. The McGill chapter of the effective altruism movement." />
