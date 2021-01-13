@@ -60,6 +60,6 @@ export default () => (
 
         <p>Lastly, we spread the word to make these ideas more widespread and accessible, as well as have discussions within effective altruism about how to best achieve our goals. <a href="https://eahub.org/" target="_blank">EA Hub</a> and <a href="https://forum.effectivealtruism.org/" target="_blank">EA Forums</a> serve as online meetings places for effective altruists across the globe!</p>
 
-        <p>Effective Altruists at McGill is McGill University's official effective altruism group, with support from <a href="https://altruismeefficacequebec.org/" target="_blank">Altruisme Efficace Québec</a>. Our goal is to spread these ideas on campus and in the Montréal area! Take a look at our work <Link to="our-work">here</Link>.</p>
+        <p>Effective Altruists at McGill is McGill University's official effective altruism group, with support from <a href="https://altruismeefficacequebec.org/" target="_blank">Altruisme Efficace Québec</a>. Our goal is to spread these ideas on campus and in the Montréal area! Take a look at our work <Link to="/our-work">here</Link>.</p>
     </>
 );
