@@ -16,7 +16,6 @@ export default () => (
         <p><a href="https://www.effectivealtruism.org/" target="_blank
         ">Effective altruism</a> is a response to this challenge. It is a research field which uses high-quality evidence and careful reasoning to work out how to help others as much as possible. It is also a community of people taking these answers seriously, by focusing their efforts on the most promising solutions to the world's most pressing problems.</p>
 
-
         <Container fluid style={{ padding: 0 }}>
             <Row align="start" justify="start" nogutter>
                 <Col sm={12} md={6}>
@@ -59,6 +58,8 @@ export default () => (
 
         <p>Beyond giving to charity, effective altruists also investigate how one's career path can do the most good. For most of us, a significant amount of our productive waking life — over 80,000 hours on average — is spent working. This is an enormous resource that can be used to make the world better. If you can increase your impact by just 1%, that's equivalent to 800 hours of extra work. The main organization in this area is <a href="https://80000hours.org/" target="_blank">80,000 hours</a>.</p>
 
-        <p>Lastly, we try to spread the word and make these ideas more widespread and accessible. That's the goal of Effective Altruists at McGill - to spread these ideas within the McGill community! Take a look at the work that EA McGill does specifically <Link to="our-work">here</Link>.</p>
+        <p>Lastly, we spread the word to make these ideas more widespread and accessible, as well as have discussions within effective altruism about how to best achieve our goals. <a href="https://eahub.org/" target="_blank">EA Hub</a> and <a href="https://forum.effectivealtruism.org/" target="_blank">EA Forums</a> serve as online meetings places for effective altruists across the globe!</p>
+
+        <p>Effective Altruists at McGill is McGill University's official effective altruism group, with support from <a href="https://altruismeefficacequebec.org/" target="_blank">Altruisme Efficace Québec</a>. Our goal is to spread these ideas on campus and in the Montréal area! Take a look at our work <Link to="our-work">here</Link>.</p>
     </>
 );

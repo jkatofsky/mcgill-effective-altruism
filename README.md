@@ -33,7 +33,7 @@ react-static has [problems when used with NPM](https://github.com/react-static/r
     yarn start
     ```
 
-## Building
+## Deployment
 
 To build the site and host the result locally, run
 
@@ -48,7 +48,7 @@ run
 yarn build
 ```
 
-## Contributing & Deployment
+## Contributing
 
 If you wish to contribute code, please fork the repository and make a pull request!
 
