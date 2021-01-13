@@ -6,6 +6,7 @@ export default () => (
     <>
         <PageHead pageTitle="Connect With Us" />
         <h2>Connect With Us</h2>
+        <hr />
 
         <Container fluid style={{ padding: 0 }}>
             <Row justify="around" nogutter>

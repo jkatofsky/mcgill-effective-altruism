@@ -140,6 +140,8 @@ export default () => (
         <PageHead pageTitle="FAQ" />
 
         <h2>Frequently Asked Questions</h2>
+        <hr />
+
         <Accordion allowMultipleExpanded allowZeroExpanded>
             {FAQs.map(entry => (
                 <AccordionItem key={FAQs.indexOf(entry)}>

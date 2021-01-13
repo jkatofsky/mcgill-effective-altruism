@@ -17,10 +17,8 @@ class App extends Component {
                     <Routes
                         render={({ routePath, getComponentForPath }) => {
                             let element = getComponentForPath(routePath);
-                            //TODO: below line is needed because no 404 page renders when using custom render prop
-                            //because getComponentForPath returns false when it's a 404, not the 404 page!!!
-                            //https://github.com/react-static/react-static/blob/3793552f6e9ff921cb8480768a7438e386f6194b/packages/react-static/src/browser/components/Routes.js#L41
-                            //make an issue or pull request for this
+                            //TODO: can remove this line when my PR gets accepted
+                            //https://github.com/react-static/react-static/pull/1557
                             if (!element) element = React.createElement(templatesByPath['404']);
                             //TODO: when transitioning quickly between pages,
                             //will briefly render duplicate b/c routePath's updating is delayed

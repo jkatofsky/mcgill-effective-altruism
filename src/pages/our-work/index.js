@@ -8,6 +8,8 @@ export default () => (
     <>
         <PageHead pageTitle="Our Work" />
         <h2>Our Work</h2>
+        <hr />
+
         <h3>Effective Altruism Fellowship</h3>
         <Container fluid style={{ padding: 0 }}>
             <Row align="start" justify="start" nogutter>
@@ -26,7 +28,6 @@ export default () => (
                 </Col>
             </Row>
         </Container>
-
 
         <h3>Weekly Meetings</h3>
         <p>In the winter semester, we run weekly drop-in meetings <b>Wednesdays at 6:30PM Montréal time</b>, open to all who are interested. Stay posted for our itinerary of topics and Zoom information!</p>

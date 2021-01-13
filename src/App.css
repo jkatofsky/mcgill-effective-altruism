@@ -13,7 +13,7 @@ body {
 
 .page-content {
     max-width: 1000px;
-    padding: 15px;
+    padding: 15px 15px 0 15px;
     margin: auto;
 }
 
@@ -81,6 +81,11 @@ p,
 ul {
     font-size: large;
     font-weight: 300;
+}
+
+hr {
+    border-color: #cccccc;
+    border-top-width: 0px;
 }
 
 /* 
