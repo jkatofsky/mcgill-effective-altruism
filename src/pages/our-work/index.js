@@ -10,10 +10,10 @@ export default () => (
         <h2>Our Work</h2>
         <hr />
 
-        <h3>Effective Altruism Fellowship</h3>
         <Container fluid style={{ padding: 0 }}>
             <Row align="start" justify="start" nogutter>
                 <Col sm={12} md={6}>
+                    <h3>Effective Altruism Fellowship</h3>
                     <p>Every fall semester, we run an effective altruism fellowship. Each week during the program, the cohort of fellows will read about a certain topic within effective altruism and then meets to discuss it.</p>
 
                     <p>In the process, fellows gain access to guest speakers/professors and confront moral questions alongside a group of intelligent and open-minded individuals. At the end of the fellowship, the fellows collectively decide on a charity to which they want to donate.</p>

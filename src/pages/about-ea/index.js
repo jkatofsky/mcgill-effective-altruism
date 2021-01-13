@@ -16,11 +16,12 @@ export default () => (
         <p><a href="https://www.effectivealtruism.org/" target="_blank
         ">Effective altruism</a> is a response to this challenge. It is a research field which uses high-quality evidence and careful reasoning to work out how to help others as much as possible. It is also a community of people taking these answers seriously, by focusing their efforts on the most promising solutions to the world's most pressing problems.</p>
 
-        <h3>The Framework</h3>
 
         <Container fluid style={{ padding: 0 }}>
             <Row align="start" justify="start" nogutter>
                 <Col sm={12} md={6}>
+                    <h3>The Framework</h3>
+
                     <p>In general, we evaluate the most worthwhile causes on the following criteria:</p>
 
                     <ul>
