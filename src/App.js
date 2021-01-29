@@ -22,7 +22,6 @@ class App extends Component {
                             if (!element) element = React.createElement(templatesByPath['404']);
                             //TODO: when transitioning quickly between pages,
                             //will briefly render duplicate b/c routePath's updating is delayed
-                            //how to address?
                             return (
                                 <Transition
                                     native unique reset
