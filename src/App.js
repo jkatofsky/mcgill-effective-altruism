@@ -20,11 +20,15 @@ class App extends Component {
                             //TODO: can remove this line when my PR gets accepted
                             //https://github.com/react-static/react-static/pull/1557
                             if (!element) element = React.createElement(templatesByPath['404']);
+
                             //TODO: when transitioning quickly between pages,
                             //will briefly render duplicate b/c routePath's updating is delayed
+
+                            // TODO: on prod, when hard reloading the home page, children aren't fully displayed when transition starts
+                            //don't know how to fix or replicate
                             return (
                                 <Transition
-                                    native unique reset
+                                    unique reset
                                     items={routePath}
                                     from={{ transform: 'translateY(100px)', opacity: 0 }}
                                     enter={{ transform: 'translateY(0px)', opacity: 1 }}

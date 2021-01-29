@@ -6,8 +6,6 @@
 
 Doing good better. The website for the McGill chapter of the [effective altruism](https://www.effectivealtruism.org/) movement.
 
-Built by [Josh Katofsky](https://github.com/jkatofsky) and [Gabriela Moisescu-Pareja](https://github.com/gabrielamp).
-
 Built with [react-static](https://github.com/react-static/react-static) and hosted on [Netlify](https://www.netlify.com/).
 
 ## Setup

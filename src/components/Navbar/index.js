@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from 'react-router-dom';
-import logo from '../../logo.png'; //TODO: special EA McGill logo instead?
+import logo from '../../logo.png';
 import "./style.css";
 import { slide as BurgerMenu } from 'react-burger-menu';
 
