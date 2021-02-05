@@ -33,7 +33,11 @@ export default () => (
         <h3>Weekly Meetings</h3>
         <p>In the winter semester, we run weekly meetings <b>Wednesdays at 6:30PM Montréal time</b>, open to all. Similarly to the fellowship, we discuss a different topic each week, often relating to current events or current debates within effective altruism. Occaisonally, we will invite guest speakers as well! For the topics of upcoming weeks and the Zoom information, check out our <a href="https://www.facebook.com/eamcgill/events/" target="_blank">Facebook events</a>!</p>
 
-        <h3>Advising</h3>
-        <p>We partner with other organizations at McGill to increase the impact of their donations. Recently, we have worked with sororities to do so. If you are interested in partnering, please <Link to="/connect">connect with us</Link>! </p>
+        <h3>EA Library</h3>
+        <p>We have many books relating to Effective Altruism, and lend them out to anybody who wants to learn more! When on-campus life picks up, we will have an in-person location for them. In the meantime, we will mail you the books. You can check out a book <a href="https://docs.google.com/spreadsheets/d/1ysIw8SSH5f2AkR1wSUyO38KxC2oDWXTHxcSqlZP0zao/edit?usp=sharing" target="_blank">here</a>.</p>
+
+        <h3>Career and Club Advising</h3>
+        <p>We provide career planning resources and workshops, so that you can make the most of your 80,000 hours of working life. Stay posted for more information.</p>
+        <p>We also partner with other organizations at McGill to increase the impact of their donations. Recently, we have worked with sororities to do so. If you are interested in partnering, please <Link to="/connect">connect with us</Link>! </p>
     </>
 );
