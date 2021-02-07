@@ -1,16 +1,16 @@
-<img src="src/logo.png" alt="drawing" width="80"/>
+<img src="public/images/ea-logo.png" alt="drawing" width="80"/>
 
-<img src="https://api.netlify.com/api/v1/badges/4d76ef8a-6e14-4cbc-9d42-60ac6c40a5e3/deploy-status">
+<img src="https://api.netlify.com/api/v1/badges/12a2190a-5861-4816-bb81-97f41009747d/deploy-status">
 
 # Effective Altruists at McGill
 
 Doing good better. The website for the McGill chapter of the [effective altruism](https://www.effectivealtruism.org/) movement.
 
-Built with [react-static](https://github.com/react-static/react-static) and hosted on [Netlify](https://www.netlify.com/).
+Built with [next.js](https://nextjs.org/) and hosted on [Netlify](https://www.netlify.com/).
 
 ## Setup
 
-react-static has [problems when used with NPM](https://github.com/react-static/react-static/issues/1552). Use [yarn](https://yarnpkg.com/) instead.
+All of the following commands should also work with `npm`, but I use `yarn`.
 
 1. Clone this repository.
 
@@ -28,26 +28,15 @@ react-static has [problems when used with NPM](https://github.com/react-static/r
 3. And run locally.
 
     ```bash
-    yarn start
+    yarn dev
     ```
-
-## Deployment
-
-To build the site and host the result locally, run
-
-```bash
-yarn stage && yarn serve
-```
-
-or, to simply generate the `dist` folder for hosting elsewhere,
-run
-
-```bash
-yarn build
-```
 
 ## Contributing
 
-If you wish to contribute code, please fork the repository and make a pull request!
+If you wish to contribute, please fork the repository and make a pull request!
 
-**IMPORTANT:** For those with write privileges to this repository, know that it is continuously deployed with Netlify. Code pushed to the master branch will be automatically built on production. If you have write privileges to this repository, do your development in a seperate branch and *only* merge to master when it has been **staged** locally and works as expected & without errors there.
+**IMPORTANT:** For those with write privileges to this repository, know that it is continuously deployed with Netlify. Code pushed to the master branch will be automatically built on production. It is therefore very important to test building the site and hosting the result locally before pushing any code
+
+```bash
+yarn build && yarn start
+```

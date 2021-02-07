@@ -6,9 +6,8 @@ import {
     AccordionItemButton,
     AccordionItemPanel,
 } from 'react-accessible-accordion';
-import PageHead from '../../components/PageHead.js';
-import "./style.css";
-
+import PageHead from '../components/PageHead.js';
+import styles from '../styles/faq.module.css';
 
 //TODO: incorporate the different wordings found here: https://www.effectivealtruism.org/faqs-criticism-objections/
 const FAQs = [
@@ -135,7 +134,7 @@ const FAQs = [
     }
 ]
 
-export default () => (
+const FAQ = () => (
     <>
         <PageHead pageTitle="FAQ" />
 
@@ -146,7 +145,7 @@ export default () => (
             {FAQs.map(entry => (
                 <AccordionItem key={FAQs.indexOf(entry)}>
                     <AccordionItemHeading>
-                        <AccordionItemButton className="question">
+                        <AccordionItemButton className={styles['question']}>
                             {entry.question}
                         </AccordionItemButton>
                     </AccordionItemHeading>
@@ -158,3 +157,5 @@ export default () => (
         </Accordion>
     </>
 );
+
+export default FAQ;

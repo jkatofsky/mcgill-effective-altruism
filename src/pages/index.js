@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from "../logo.png";
 import PageHead from '../components/PageHead.js';
 
-export default () => (
+const Home = () => (
     <>
         <PageHead />
 
-        <img src={logo} alt="" id="main-logo" />
+        <img src="/images/ea-logo.png" alt="" id="main-logo" />
         <h1>
             <span style={{ color: "#0A8399" }}>Effective Altruists</span>
             <span>&nbsp;at&nbsp;</span>
@@ -21,3 +20,5 @@ export default () => (
         <p>We are the McGill chapter of effective altruism, aiming to promote the movement on campus and in the Montréal area.</p>
     </>
 );
+
+export default Home;

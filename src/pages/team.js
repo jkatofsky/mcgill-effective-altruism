@@ -1,7 +1,7 @@
 import React from 'react';
 import PageHead from "../components/PageHead.js";
 
-export default () => (
+const Team = () => (
     <>
         <PageHead pageTitle="Our Team" />
         <h2>Our Team</h2>
@@ -10,3 +10,5 @@ export default () => (
         <p style={{ textAlign: 'center' }}>Coming soon!</p>
     </>
 );
+
+export default Team;

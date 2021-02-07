@@ -1,11 +1,11 @@
 import React from 'react';
-import PageHead from '../../components/PageHead.js';
+import PageHead from '../components/PageHead.js';
 import { Container, Row, Col } from 'react-grid-system';
 
-import './style.css';
+import styles from '../styles/connect.module.css';
 
-export default () => (
-    <div className='connect-page'>
+const Connect = () => (
+    <div className={styles['connect-page']}>
         <PageHead pageTitle="Connect With Us" />
         <h2>Connect With Us</h2>
         <hr />
@@ -32,3 +32,5 @@ export default () => (
         </Container>
     </div>
 );
+
+export default Connect;

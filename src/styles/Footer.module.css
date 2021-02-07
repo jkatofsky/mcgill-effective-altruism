@@ -1,9 +1,9 @@
-footer {
+.footer {
     max-width: 500px;
     margin: 20px auto 20px auto;
 }
 
-footer p {
+.footer p {
     text-align: center;
     font-size: small;
     margin-block-start: 0.2em;

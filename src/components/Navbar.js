@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import { NavLink } from 'react-router-dom';
-import logo from '../../logo.png';
-import "./style.css";
+import NavLink from './NavLink.js';
+import styles from '../styles/Navbar.module.css';
 import { slide as BurgerMenu } from 'react-burger-menu';
 
-// TODO: make this come from the global route data?
 const links = [
     { name: "About EA", link: "/about-ea" },
     { name: "Our Work", link: "/our-work" },
@@ -42,28 +40,28 @@ class Navbar extends Component {
                     isOpen={this.state.menuOpen}
                     onStateChange={(state) => this.handleStateChange(state)}>
                     {links.map(entry => (
-                        <NavLink onClick={() => this.closeMenu()}
-                            activeClassName="active-link"
-                            className="text-link link burger-link"
-                            key={entry.link} to={entry.link}>
-                            {entry.name}
+                        <NavLink activeClassName={styles['active-link']}
+                            onClick={() => this.closeMenu()}
+                            key={entry.link} href={entry.link}>
+                            <span className={`${styles['text-link']} ${styles['link']} ${styles['burger-link']}`}>
+                                {entry.name}
+                            </span>
                         </NavLink>
                     ))}
                 </BurgerMenu>
-                <nav>
-                    <NavLink
-                        activeClassName="active-link"
-                        className="hover-raise link" exact to="/">
-                        <img src={logo} alt="" />
+                <nav className={styles['nav']}>
+                    <NavLink activeClassName={styles['active-link']}
+                        exact href="/">
+                        <img className={`hover-raise ${styles['link']}`} src="/images/ea-logo.png" alt="" />
                     </NavLink>
-                    <div className="desktop-show" id="desktop-links-container">
-                        <div id="desktop-links">
+                    <div className={`desktop-show ${styles['desktop-links-container']}`}>
+                        <div className={styles['desktop-links']}>
                             {links.map(entry => (
-                                <NavLink
-                                    activeClassName="active-link"
-                                    className="hover-raise text-link link desktop-link"
-                                    key={entry.link} to={entry.link}>
-                                    {entry.name}
+                                <NavLink activeClassName={styles['active-link']}
+                                    key={entry.link} href={entry.link}>
+                                    <span className={`hover-raise ${styles['text-link']} ${styles['link']} ${styles['desktop-link']}`}>
+                                        {entry.name}
+                                    </span>
                                 </NavLink>
                             ))}
                         </div>

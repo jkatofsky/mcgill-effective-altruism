@@ -1,0 +1,47 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 5% 8px 5%;
+    box-shadow: 0 5px 10px lightgray;
+}
+
+.nav img {
+    height: 70px;
+    margin-top: 5px;
+}
+
+.text-link {
+    color: rgb(75, 75, 75);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.link {
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.active-link {
+    margin-bottom: 0px;
+    font-weight: 500;
+    border-bottom: 4px solid #cccccc;
+}
+
+.desktop-link {
+    margin: 0 15px 0 15px;
+    font-size: 20px;
+}
+
+.burger-link {
+    margin: 15px 0 15px 0;
+    font-size: 25px;
+}
+
+.desktop-links-container {
+    width: 100%;
+}
+
+.desktop-links {
+    float: right;
+}

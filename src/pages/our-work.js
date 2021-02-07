@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import PageHead from "../../components/PageHead.js";
-import fellows2020 from './2020-fellows.png';
+import Link from 'next/link';
+import PageHead from "../components/PageHead.js";
 import { Container, Row, Col } from 'react-grid-system';
 
-export default () => (
+const OurWork = () => (
     <>
         <PageHead pageTitle="Our Work" />
         <h2>Our Work</h2>
@@ -22,7 +21,7 @@ export default () => (
                 </Col>
                 <Col sm={12} md={6}>
                     <figure>
-                        <img src={fellows2020} alt="" />
+                        <img src='/images/2020-fellows.png' alt="" />
                         <figcaption>Some of our fall 2020 fellows</figcaption>
                     </figure>
                 </Col>
@@ -38,6 +37,8 @@ export default () => (
 
         <h3>Career and Club Advising</h3>
         <p>We provide career planning resources and workshops, so that you can make the most of your 80,000 hours of working life. Stay posted for more information.</p>
-        <p>We also partner with other organizations at McGill to increase the impact of their donations. Recently, we have worked with sororities to do so. If you are interested in partnering, please <Link to="/connect">connect with us</Link>! </p>
+        <p>We also partner with other organizations at McGill to increase the impact of their donations. Recently, we have worked with sororities to do so. If you are interested in partnering, please <Link href="/connect">connect with us</Link>! </p>
     </>
 );
+
+export default OurWork;

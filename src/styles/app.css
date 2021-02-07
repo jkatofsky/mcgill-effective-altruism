@@ -125,3 +125,63 @@ If you come at a link from the bottom, sometimes it will move away from your mou
         top: -4px;
     }
 }
+
+/* For the burger menu package */
+.bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+}
+
+.bm-burger-bars {
+    background: #373a47;
+}
+
+.bm-cross-button {
+    transform: scale(2) !important;
+    top: 20px !important;
+    right: 20px !important;
+}
+
+.bm-cross {
+    background: gray;
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+.bm-menu {
+    background: #ffffff;
+    padding: 1em 1em 0;
+}
+
+.bm-item-list {
+    width: max-content;
+}
+
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* For the page transitions */
+.page-transition-enter {
+    opacity: 0;
+}
+
+.page-transition-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.page-transition-exit {
+    opacity: 1;
+}
+
+.page-transition-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+}
