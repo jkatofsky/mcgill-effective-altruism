@@ -42,10 +42,10 @@ class Navbar extends Component {
 
                     {links.map(entry => (
                         <NavLink activeClassName={styles['active-link']}
-                            onClick={() => this.closeMenu()}
                             key={entry.link} href={entry.link}>
 
-                            <span className={`${styles['link']} ${styles['text-link']} ${styles['burger-link']}`}>
+                            <span onClick={() => this.closeMenu()}
+                                className={`${styles['link']} ${styles['text-link']} ${styles['burger-link']}`}>
                                 {entry.name}
                             </span>
 
