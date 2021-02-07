@@ -22,7 +22,6 @@ function App({ Component, pageProps, router }) {
                 </motion.div>
             </AnimateSharedLayout>
         </div>
-
     </>
 }
 

@@ -45,7 +45,7 @@ class Navbar extends Component {
                             onClick={() => this.closeMenu()}
                             key={entry.link} href={entry.link}>
 
-                            <span className={`${styles['text-link']} ${styles['link']} ${styles['burger-link']}`}>
+                            <span className={`${styles['link']} ${styles['text-link']} ${styles['burger-link']}`}>
                                 {entry.name}
                             </span>
 
@@ -67,7 +67,7 @@ class Navbar extends Component {
                                 <NavLink activeClassName={styles['active-link']}
                                     key={entry.link} href={entry.link}>
 
-                                    <span className={`hover-raise ${styles['text-link']} ${styles['link']} ${styles['desktop-link']}`}>
+                                    <span className={`hover-raise  ${styles['link']} ${styles['text-link']} ${styles['desktop-link']}`}>
                                         {entry.name}
                                     </span>
 
