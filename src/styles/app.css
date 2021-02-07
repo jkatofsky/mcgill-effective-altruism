@@ -108,10 +108,9 @@ hr {
 
 
 /* 
-TODO: revisit nav link hover animations 
+TODO: this instead of hovering?
 https://stackoverflow.com/questions/26726436/css-bottom-border-transition-expand-from-middle
-
-if not that, figure out a way to make things that hover not move their clickable area?
+or, figure out a way to make things that hover not move their clickable area?
 If you come at a link from the bottom, sometimes it will move away from your mouse too much.
 */
 .hover-raise {
@@ -165,23 +164,4 @@ If you come at a link from the bottom, sometimes it will move away from your mou
 
 .bm-overlay {
     background: rgba(0, 0, 0, 0.4);
-}
-
-/* For the page transitions */
-.page-transition-enter {
-    opacity: 0;
-}
-
-.page-transition-enter-active {
-    opacity: 1;
-    transition: opacity 300ms;
-}
-
-.page-transition-exit {
-    opacity: 1;
-}
-
-.page-transition-exit-active {
-    opacity: 0;
-    transition: opacity 300ms;
 }

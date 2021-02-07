@@ -6,7 +6,7 @@
 
 Doing good better. The website for the McGill chapter of the [effective altruism](https://www.effectivealtruism.org/) movement.
 
-Built with [next.js](https://nextjs.org/) and hosted on [Netlify](https://www.netlify.com/).
+Built with [Next.js](https://nextjs.org/) and hosted on [Netlify](https://www.netlify.com/).
 
 ## Setup
 
@@ -35,7 +35,7 @@ All of the following commands should also work with `npm`, but I use `yarn`.
 
 If you wish to contribute, please fork the repository and make a pull request!
 
-**IMPORTANT:** For those with write privileges to this repository, know that it is continuously deployed with Netlify. Code pushed to the master branch will be automatically built on production. It is therefore very important to test building the site and hosting the result locally before pushing any code
+**IMPORTANT:** For those with write privileges to this repository, know that it is continuously deployed with Netlify. Code pushed to the master branch will be automatically built on production. It is therefore very important to test building the site and hosting the result locally before pushing any code:
 
 ```bash
 yarn build && yarn start

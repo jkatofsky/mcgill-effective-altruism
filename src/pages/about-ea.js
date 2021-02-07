@@ -3,7 +3,7 @@ import PageHead from '../components/PageHead.js';
 import { Container, Row, Col } from 'react-grid-system';
 import Link from 'next/link';
 
-const AboutEA = () => (
+const aboutEA = () => (
     <>
         <PageHead pageTitle="About EA" />
 
@@ -40,7 +40,7 @@ const AboutEA = () => (
                 </Col>
                 <Col sm={12} md={6}>
                     <figure>
-                        <img src='/images/diagram.jpg' alt="" />
+                        <img src='/images/distance-diagram.jpg' alt="" />
                         <figcaption>Illustration: Gil Tokio / Pingado</figcaption>
                     </figure>
                 </Col>
@@ -63,4 +63,4 @@ const AboutEA = () => (
     </>
 );
 
-export default AboutEA;
+export default aboutEA;

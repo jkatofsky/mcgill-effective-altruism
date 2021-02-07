@@ -39,29 +39,38 @@ class Navbar extends Component {
                     width={250} right itemListElement="div" disableAutoFocus
                     isOpen={this.state.menuOpen}
                     onStateChange={(state) => this.handleStateChange(state)}>
+
                     {links.map(entry => (
                         <NavLink activeClassName={styles['active-link']}
                             onClick={() => this.closeMenu()}
                             key={entry.link} href={entry.link}>
+
                             <span className={`${styles['text-link']} ${styles['link']} ${styles['burger-link']}`}>
                                 {entry.name}
                             </span>
+
                         </NavLink>
                     ))}
                 </BurgerMenu>
+
                 <nav className={styles['nav']}>
+
                     <NavLink activeClassName={styles['active-link']}
                         exact href="/">
-                        <img className={`hover-raise ${styles['link']}`} src="/images/ea-logo.png" alt="" />
+                        <img className={`hover-raise ${styles['link']}`} src="/images/ea-mcgill-logo.png" alt="" />
                     </NavLink>
+
                     <div className={`desktop-show ${styles['desktop-links-container']}`}>
                         <div className={styles['desktop-links']}>
+
                             {links.map(entry => (
                                 <NavLink activeClassName={styles['active-link']}
                                     key={entry.link} href={entry.link}>
+
                                     <span className={`hover-raise ${styles['text-link']} ${styles['link']} ${styles['desktop-link']}`}>
                                         {entry.name}
                                     </span>
+
                                 </NavLink>
                             ))}
                         </div>

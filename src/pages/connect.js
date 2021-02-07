@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-grid-system';
 
 import styles from '../styles/connect.module.css';
 
-const Connect = () => (
+const connect = () => (
     <div className={styles['connect-page']}>
         <PageHead pageTitle="Connect With Us" />
         <h2>Connect With Us</h2>
@@ -33,4 +33,4 @@ const Connect = () => (
     </div>
 );
 
-export default Connect;
+export default connect;

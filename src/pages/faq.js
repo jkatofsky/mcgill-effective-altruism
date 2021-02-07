@@ -134,7 +134,7 @@ const FAQs = [
     }
 ]
 
-const FAQ = () => (
+const faq = () => (
     <>
         <PageHead pageTitle="FAQ" />
 
@@ -158,4 +158,4 @@ const FAQ = () => (
     </>
 );
 
-export default FAQ;
+export default faq;

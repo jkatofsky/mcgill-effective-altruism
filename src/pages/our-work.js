@@ -3,7 +3,7 @@ import Link from 'next/link';
 import PageHead from "../components/PageHead.js";
 import { Container, Row, Col } from 'react-grid-system';
 
-const OurWork = () => (
+const ourWork = () => (
     <>
         <PageHead pageTitle="Our Work" />
         <h2>Our Work</h2>
@@ -41,4 +41,4 @@ const OurWork = () => (
     </>
 );
 
-export default OurWork;
+export default ourWork;

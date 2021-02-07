@@ -1,7 +1,7 @@
 import React from 'react';
 import PageHead from '../components/PageHead.js';
 
-const Home = () => (
+const home = () => (
     <>
         <PageHead />
 
@@ -21,4 +21,4 @@ const Home = () => (
     </>
 );
 
-export default Home;
+export default home;

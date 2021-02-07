@@ -1,7 +1,7 @@
 import React from 'react';
 import PageHead from "../components/PageHead.js";
 
-const Team = () => (
+const team = () => (
     <>
         <PageHead pageTitle="Our Team" />
         <h2>Our Team</h2>
@@ -11,4 +11,4 @@ const Team = () => (
     </>
 );
 
-export default Team;
+export default team;
