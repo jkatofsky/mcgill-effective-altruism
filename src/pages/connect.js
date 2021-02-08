@@ -17,11 +17,11 @@ const connect = () => (
 
         <Container fluid className='grid-container'>
 
-            <Row justify="around" nogutter>
+            <Row justify="center" nogutter>
 
                 <Col md={5}>
-                    <p>Check out Facebook page!</p>
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Feamcgill%2F&tabs=timeline&width=340&height=400&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=true&appId=433031278014530" width="340" height="400" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <p>You can also check out our Facebook page!</p>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Feamcgill%2F&tabs=timeline&width=340&height=400&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=true&appId=433031278014530" width="340" height="400" scrolling="no" frameBorder="0" allowFullScreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </Col>
 
                 <Col md={5}>
