@@ -2,7 +2,6 @@ import React from 'react';
 import PageHead from "../components/PageHead.js";
 import { Container, Row, Col } from 'react-grid-system';
 import styles from '../styles/team.module.css';
-import Image from 'next/image';
 
 const picsDir = '/images/execs';
 
@@ -71,8 +70,7 @@ const team = () => (
                             <h3 className={styles['name']}>{exec.name}</h3>
                             <h4 className={styles['position']}>{exec.position}</h4>
                             <figure>{exec.image &&
-                                <Image width={350} height={350}
-                                    src={exec.image} alt="" />
+                                <img src={exec.image} alt="" loading='lazy' />
                             }
                             </figure>
                             <p className={styles['bio']}>{exec.bio}</p>

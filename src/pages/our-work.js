@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import PageHead from "../components/PageHead.js";
 import { Container, Row, Col } from 'react-grid-system';
 
@@ -22,10 +21,8 @@ const ourWork = () => (
                 </Col>
                 <Col sm={12} md={6}>
                     <figure>
-                        <div>
-                            <Image width={400} height={310} src='/images/2020-fellows.png' alt="" />
-                            <figcaption>Some of our fall 2020 fellows</figcaption>
-                        </div>
+                        <img loading='lazy' src='/images/2020-fellows.png' alt="" />
+                        <figcaption>Some of our fall 2020 fellows</figcaption>
                     </figure>
                 </Col>
             </Row>

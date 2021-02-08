@@ -2,7 +2,6 @@ import React from 'react';
 import PageHead from '../components/PageHead.js';
 import { Container, Row, Col } from 'react-grid-system';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const aboutEA = () => (
     <>
@@ -41,10 +40,8 @@ const aboutEA = () => (
                 </Col>
                 <Col sm={12} md={6}>
                     <figure>
-                        <div>
-                            <Image width={400} height={455} src='/images/distance-diagram.jpg' alt="" />
-                            <figcaption>Illustration: Gil Tokio / Pingado</figcaption>
-                        </div>
+                        <img src='/images/distance-diagram.jpg' alt="" loading="lazy" />
+                        <figcaption>Illustration: Gil Tokio / Pingado</figcaption>
                     </figure>
                 </Col>
             </Row>

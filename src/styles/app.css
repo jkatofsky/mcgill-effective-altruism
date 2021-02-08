@@ -60,7 +60,7 @@ span {
 }
 
 img {
-    display: block !important;
+    display: block;
 }
 
 #main-logo {
@@ -68,12 +68,8 @@ img {
     margin: 15px auto 0 auto;
 }
 
-figure {
-    display: flex;
-    justify-content: center;
-}
-
 figure img {
+    margin: 0 auto;
     width: 400px;
     max-width: 100%;
     border-radius: 10px;

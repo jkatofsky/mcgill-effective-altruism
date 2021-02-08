@@ -5,7 +5,6 @@ import { AnimateSharedLayout, motion } from "framer-motion";
 
 import '../styles/app.css';
 // TODO: anchor routing?
-// TODO: use the next/Image component?
 
 function App({ Component, pageProps, router }) {
     return <>
