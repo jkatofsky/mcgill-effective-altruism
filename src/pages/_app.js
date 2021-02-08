@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from "../components/Navbar.js";
+import NavBar from "../components/NavBar.js";
 import Footer from "../components/Footer.js";
 import { AnimateSharedLayout, motion } from "framer-motion";
 
@@ -9,7 +9,7 @@ import '../styles/app.css';
 
 function App({ Component, pageProps, router }) {
     return <>
-        <Navbar />
+        <NavBar />
         <div className="page-content">
             <AnimateSharedLayout layoutId={router.route}>
                 <motion.div layout

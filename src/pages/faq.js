@@ -10,7 +10,7 @@ import PageHead from '../components/PageHead.js';
 import styles from '../styles/faq.module.css';
 
 //TODO: incorporate the different wordings found here: https://www.effectivealtruism.org/faqs-criticism-objections/
-const FAQs = [
+const faqs = [
     {
         question: "What if I think one of those approaches you listed won’t help people much, or would actually be harmful?",
         answer: <p>OK, probably some others in the community will agree with you! If you have good reasons for thinking that and explain them, you’ll persuade people and help us do a better job of improving the world. Our whole goal is to be responsive to good evidence and analysis, so we debate a lot and change our minds frequently.</p>
@@ -142,8 +142,8 @@ const faq = () => (
         <hr />
 
         <Accordion allowMultipleExpanded allowZeroExpanded>
-            {FAQs.map(entry => (
-                <AccordionItem key={FAQs.indexOf(entry)}>
+            {faqs.map((entry, index) => (
+                <AccordionItem key={index}>
                     <AccordionItemHeading>
                         <AccordionItemButton className={styles['question']}>
                             {entry.question}

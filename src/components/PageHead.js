@@ -2,8 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 
-const PageHead = (props) => {
-    const { pageTitle } = props;
+const PageHead = ({ pageTitle }) => {
     const siteTitle = "EA at McGill"
 
     const title = pageTitle ? `${siteTitle} - ${pageTitle}` : siteTitle;

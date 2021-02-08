@@ -15,7 +15,7 @@ const connect = () => (
                     </a>.
         </p>
 
-        <Container fluid style={{ padding: 0 }}>
+        <Container fluid className='grid-container'>
 
             <Row justify="around" nogutter>
 

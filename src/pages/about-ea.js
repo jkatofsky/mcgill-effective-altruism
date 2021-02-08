@@ -2,6 +2,7 @@ import React from 'react';
 import PageHead from '../components/PageHead.js';
 import { Container, Row, Col } from 'react-grid-system';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const aboutEA = () => (
     <>
@@ -15,7 +16,7 @@ const aboutEA = () => (
         <p><a href="https://www.effectivealtruism.org/" target="_blank
         ">Effective altruism</a> is a response to this challenge. It is a research field which uses high-quality evidence and careful reasoning to work out how to help others as much as possible. It is also a community of people taking these answers seriously, by focusing their efforts on the most promising solutions to the world's most pressing problems.</p>
 
-        <Container fluid style={{ padding: 0 }}>
+        <Container fluid className='grid-container'>
             <Row align="start" justify="start" nogutter>
                 <Col sm={12} md={6}>
                     <h3>The Framework</h3>
@@ -40,8 +41,10 @@ const aboutEA = () => (
                 </Col>
                 <Col sm={12} md={6}>
                     <figure>
-                        <img src='/images/distance-diagram.jpg' alt="" />
-                        <figcaption>Illustration: Gil Tokio / Pingado</figcaption>
+                        <div>
+                            <Image width={400} height={455} src='/images/distance-diagram.jpg' alt="" />
+                            <figcaption>Illustration: Gil Tokio / Pingado</figcaption>
+                        </div>
                     </figure>
                 </Col>
             </Row>

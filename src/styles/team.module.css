@@ -1,0 +1,29 @@
+.exec-container {
+    margin-bottom: 30px;
+}
+
+.name,
+.position {
+    margin-block-start: 0.2em;
+    margin-block-end: 0em;
+    text-align: center;
+}
+
+.bio {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    padding: 0 10px 0 20px;
+}
+
+.name {
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.position {
+    font-size: 1.4em;
+    font-weight: 400;
+    font-style: italic;
+    color: #0A889E;
+}

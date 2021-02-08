@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import PageHead from "../components/PageHead.js";
 import { Container, Row, Col } from 'react-grid-system';
 
@@ -9,7 +10,7 @@ const ourWork = () => (
         <h2>Our Work</h2>
         <hr />
 
-        <Container fluid style={{ padding: 0 }}>
+        <Container fluid className='grid-container'>
             <Row align="start" justify="start" nogutter>
                 <Col sm={12} md={6}>
                     <h3>Effective Altruism Fellowship</h3>
@@ -21,8 +22,10 @@ const ourWork = () => (
                 </Col>
                 <Col sm={12} md={6}>
                     <figure>
-                        <img src='/images/2020-fellows.png' alt="" />
-                        <figcaption>Some of our fall 2020 fellows</figcaption>
+                        <div>
+                            <Image width={400} height={310} src='/images/2020-fellows.png' alt="" />
+                            <figcaption>Some of our fall 2020 fellows</figcaption>
+                        </div>
                     </figure>
                 </Col>
             </Row>
@@ -33,7 +36,7 @@ const ourWork = () => (
         <p>In the winter semester, we run weekly meetings <b>Wednesdays at 6:30PM Montréal time</b>, open to all. Similarly to the fellowship, we discuss a different topic each week, often relating to current events or current debates within effective altruism. Occaisonally, we will invite guest speakers as well! For the topics of upcoming weeks and the Zoom information, check out our <a href="https://www.facebook.com/eamcgill/events/" target="_blank">Facebook events</a>!</p>
 
         <h3>EA Library</h3>
-        <p>We have many books relating to Effective Altruism, and lend them out to anybody who wants to learn more! When on-campus life picks up, we will have an in-person location for them. In the meantime, we will mail you the books. You can check out a book <a href="https://docs.google.com/spreadsheets/d/1ysIw8SSH5f2AkR1wSUyO38KxC2oDWXTHxcSqlZP0zao/edit?usp=sharing" target="_blank">here</a>.</p>
+        <p>We have many books relating to effective altruism, and lend them out to anybody who wants to learn more! When on-campus life picks up, we will have an in-person location for them. In the meantime, we will mail you the books. You can check out a book <a href="https://docs.google.com/spreadsheets/d/1ysIw8SSH5f2AkR1wSUyO38KxC2oDWXTHxcSqlZP0zao/edit?usp=sharing" target="_blank">here</a>.</p>
 
         <h3>Career and Club Advising</h3>
         <p>We provide career planning resources and workshops, so that you can make the most of your 80,000 hours of working life. Stay posted for more information.</p>

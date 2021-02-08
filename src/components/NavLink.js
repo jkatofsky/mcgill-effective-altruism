@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'next/link'
 import React, { Children } from 'react'
 
-const ActiveLink = ({ children, activeClassName, ...props }) => {
+const NavLink = ({ children, activeClassName, ...props }) => {
     const { asPath } = useRouter()
     const child = Children.only(children)
     const childClassName = child.props.className || ''
@@ -24,8 +24,8 @@ const ActiveLink = ({ children, activeClassName, ...props }) => {
     )
 }
 
-ActiveLink.propTypes = {
+NavLink.propTypes = {
     activeClassName: PropTypes.string.isRequired,
 }
 
-export default ActiveLink;
+export default NavLink;
