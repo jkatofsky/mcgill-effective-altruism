@@ -6,7 +6,7 @@ const home = () => (
     <div className={styles['homepage']}>
         <PageHead />
 
-        <img src="/images/ea-logo.png" alt="" className={styles['home-logo']} />
+        <img src="/images/ea-logo.png" alt="EA Logo" className={styles['home-logo']} />
         <h1>
             <span style={{ color: "#0A8399" }}>Effective Altruists</span>
             <span>&nbsp;at&nbsp;</span>

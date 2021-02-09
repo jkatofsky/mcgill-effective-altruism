@@ -88,8 +88,7 @@ b {
 }
 
 hr {
-    border-color: #cccccc;
-    border-top-width: 0px;
+    border: 1px solid #cccccc;
 }
 
 .desktop-show {
@@ -135,7 +134,7 @@ If you come at a link from the bottom, sometimes it will move away from your mou
     width: 36px;
     height: 30px;
     right: 36px;
-    top: 36px;
+    top: 30px;
 }
 
 .bm-burger-bars {

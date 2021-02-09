@@ -28,7 +28,7 @@ const execs = [
     {
         name: "Sarah Cleveland",
         position: "VP Engagement",
-        bio: "Sarah is studyingSarah was first introduced to Effective Altruism through the Yale EA Fellowship in the summer of 2020. Since starting her own non profit, Hopewell Gives Back, in her hometown, she has wanted to find ways to further her impact on a larger scale. At McGill she studies economics and molecular biology, aiming to bring EA values into global health policy development.",
+        bio: "Sarah was first introduced to Effective Altruism through the Yale EA Fellowship in the summer of 2020. Since starting her own non profit, Hopewell Gives Back, in her hometown, she has wanted to find ways to further her impact on a larger scale. At McGill she studies economics and molecular biology, aiming to bring EA values into global health policy development.",
         image: `${picsDir}/Sarah.jpg`
     },
     {
@@ -70,7 +70,7 @@ const team = () => (
                             <h3 className={styles['name']}>{exec.name}</h3>
                             <h4 className={styles['position']}>{exec.position}</h4>
                             <figure>{exec.image &&
-                                <img src={exec.image} alt="" loading='lazy' />
+                                <img src={exec.image} alt={`${exec.name} headshot`} loading='lazy' />
                             }
                             </figure>
                             <p className={styles['bio']}>{exec.bio}</p>

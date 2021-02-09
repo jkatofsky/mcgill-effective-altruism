@@ -21,7 +21,7 @@ const ourWork = () => (
                 </Col>
                 <Col sm={12} md={6}>
                     <figure>
-                        <img loading='lazy' src='/images/2020-fellows.png' alt="" />
+                        <img loading='lazy' src='/images/2020-fellows.png' alt="Screenshot of 2020 fellows on Zoom" />
                         <figcaption>Some of our fall 2020 fellows</figcaption>
                     </figure>
                 </Col>

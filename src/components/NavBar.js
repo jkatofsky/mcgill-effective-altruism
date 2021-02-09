@@ -57,7 +57,7 @@ class NavBar extends Component {
 
                     <NavLink activeClassName={styles['active-link']}
                         exact href="/">
-                        <img className={`hover-raise ${styles['link']}`} src="/images/ea-mcgill-logo.png" alt="" />
+                        <img className={`hover-raise ${styles['link']}`} src="/images/ea-mcgill-logo.png" alt="EA McGill Logo" />
                     </NavLink>
 
                     <div className={`desktop-show ${styles['desktop-links-container']}`}>

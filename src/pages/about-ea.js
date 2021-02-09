@@ -40,7 +40,7 @@ const aboutEA = () => (
                 </Col>
                 <Col sm={12} md={6}>
                     <figure>
-                        <img src='/images/distance-diagram.jpg' alt="" loading="lazy" />
+                        <img src='/images/distance-diagram.jpg' alt="Graphic visualizing how to give more effectively" loading="lazy" />
                         <figcaption>Illustration: Gil Tokio / Pingado</figcaption>
                     </figure>
                 </Col>

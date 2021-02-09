@@ -19,10 +19,10 @@ class MyDocument extends Document {
                     <meta name="description" content="Doing good better. The McGill chapter of the effective altruism movement." />
 
                     <meta property="og:description" content="Doing good better. The McGill chapter of the effective altruism movement." />
-                    <meta property="og:url" content="https://effective-altruism-mcgill.org" />
+
                     <meta property="og:image" content="/images/ea-mcgill-logo.png" />
 
-                    <meta name="twitter:card" value="Doing good better. The McGill chapter of the effective altruism movement." />
+                    <meta property="twitter:card" content="Doing good better. The McGill chapter of the effective altruism movement." />
                     <meta property="twitter:image" content="/images/ea-mcgill-logo.png" />
                 </Head>
                 <body>
