@@ -16,13 +16,13 @@ class MyDocument extends Document {
 
                     <meta name="keywords" content="Effective Altruism, EA, Effective Giving, McGill" />
 
-                    <meta name="description" content="Doing good better. The McGill chapter of the effective altruism movement." />
+                    <meta property="twitter:card" content="summary" />
 
+                    <meta name="description" content="Doing good better. The McGill chapter of the effective altruism movement." />
                     <meta property="og:description" content="Doing good better. The McGill chapter of the effective altruism movement." />
+                    <meta property="twitter:description" content="Doing good better. The McGill chapter of the effective altruism movement." />
 
                     <meta property="og:image" content="/images/ea-mcgill-logo.png" />
-
-                    <meta property="twitter:card" content="Doing good better. The McGill chapter of the effective altruism movement." />
                     <meta property="twitter:image" content="/images/ea-mcgill-logo.png" />
                 </Head>
                 <body>
