@@ -16,13 +16,13 @@ const execs = [
     {
         name: "Simon Berens",
         position: "Vice President",
-        bio: "",
+        bio: "Simon is a U2 Computer Science student interested in moral philosophy, AI, and rationality. For fun, he likes to play ping pong, badminton, and chess, and occasionally watch 30 episodes of a show on Netflix in one day.",
         image: `${picsDir}/Simon.jpg`
     },
     {
         name: "Annie Klar",
         position: "VP Events",
-        bio: "Annie is currently completing her Bachelor of Arts with a major in Political Science at McGill. She hopes to use her degree and her minors in international development and english literature to help contribute to achieving sustainable development world wide. She is attracted to effective altruism due to its tactical approach to achieving good, and is excited to grow as a both a student and a member of the global community.",
+        bio: "Annie is currently completing her Bachelor of Arts with a major in Political Science. She hopes to use her degree and her minors in international development and english literature to help contribute to achieving sustainable development world wide. She is attracted to effective altruism due to its tactical approach to achieving good, and is excited to grow as a both a student and a member of the global community.",
         image: `${picsDir}/Annie.jpg`
     },
     {
@@ -34,8 +34,8 @@ const execs = [
     {
         name: "Giulia Mouland",
         position: "VP Finance",
-        bio: "",
-        image: ""
+        bio: "Giulia is a first year student at McGill,  studying a combination of Philosophy, Political Science, & Economics. She discovered EA by participating in McGill EA’s Fall 2020 Fellowship. She is drawn to EA for its calculated & reason-driven nature, incorporating its ideals into her everyday life.",
+        image: `${picsDir}/Giulia.jpg`
     },
     {
         name: "Josh Katofsky",
