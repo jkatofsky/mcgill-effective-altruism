@@ -2,6 +2,9 @@ import React from 'react';
 import PageHead from '../components/PageHead.js';
 import styles from '../styles/home.module.css';
 
+import { Container, Row, Col } from 'react-grid-system';
+import Link from 'next/link';
+
 const home = () => (
     <div className={styles['homepage']}>
         <PageHead />
@@ -19,6 +22,37 @@ const home = () => (
         <p>But it's no use answering the question unless you act on it. Effective altruism is about following through. It's about <b>being generous with your time and your money</b> to do the most good you can.</p>
 
         <p>We are the <b>McGill University chapter</b> of effective altruism, aiming to promote the movement on campus and in the Montréal area.</p>
+
+
+        <Container fluid className='grid-container'>
+
+            <Row justify="center" nogutter>
+
+                <Col lg={4}>
+                    <Link href="/about-ea">
+                        <div className={`${styles['homepage-button']} hover-raise`}>
+                            <span>Learn about EA &rarr;</span>
+                        </div>
+                    </Link>
+                </Col>
+
+                <Col lg={4}>
+                    <Link href="/our-work">
+                        <div className={`${styles['homepage-button']} hover-raise`}>
+                            <span>Discover our work &rarr;</span>
+                        </div>
+                    </Link>
+                </Col>
+
+                <Col lg={4}>
+                    <Link href="/connect">
+                        <div className={`${styles['homepage-button']} hover-raise`}>
+                            <span>Connect with us &rarr;</span>
+                        </div>
+                    </Link>
+                </Col>
+            </Row>
+        </Container>
     </div>
 );
 
