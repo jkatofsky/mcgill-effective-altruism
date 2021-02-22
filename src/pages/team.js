@@ -9,13 +9,13 @@ const picsDir = '/images/execs';
 const execs = [
     {
         name: "Anna Mouland",
-        position: "Vice President",
+        position: "Co-President",
         bio: "Anna is a 3rd year Honours Philosophy student with minors in Economics and Computer Science. Anna found out about EA through an AI philosophy class, and resuscitated the McGill branch in January of 2020. Anna has taken the OFTW pledge and ran two fellowships to date, she also does contract work for Ought. She hopes the McGill branch will become an EA hub in Canada!",
         image: `${picsDir}/Anna.jpg`
     },
     {
         name: "Simon Berens",
-        position: "Vice President",
+        position: "Co-President",
         bio: "Simon is a U2 Computer Science student interested in moral philosophy, AI, and rationality. For fun, he likes to play ping pong, badminton, and chess, and occasionally watch 30 episodes of a show on Netflix in one day.",
         image: `${picsDir}/Simon.jpg`
     },
