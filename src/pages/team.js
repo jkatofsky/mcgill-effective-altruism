@@ -10,13 +10,13 @@ const execs = [
     {
         name: "Anna Mouland",
         position: "Co-President",
-        bio: "Anna is a 3rd year Honours Philosophy student with minors in Economics and Computer Science. Anna found out about EA through an AI philosophy class, and resuscitated the McGill branch in January of 2020. Anna has taken the OFTW pledge and ran two fellowships to date, she also does contract work for Ought. She hopes the McGill branch will become an EA hub in Canada!",
+        bio: "Anna is a fourth year Honours Philosophy student with minors in Economics and Computer Science. Anna found out about EA through an AI philosophy class, and resuscitated the McGill branch in January of 2020. Anna has taken the OFTW pledge and ran two fellowships to date, she also does contract work for Ought. She hopes the McGill branch will become an EA hub in Canada!",
         image: `${picsDir}/Anna.jpg`
     },
     {
         name: "Simon Berens",
         position: "Co-President",
-        bio: "Simon is a U2 Computer Science student interested in moral philosophy, AI, and rationality. For fun, he likes to play ping pong, badminton, and chess, and occasionally watch 30 episodes of a show on Netflix in one day.",
+        bio: "Simon is a U4 Computer Science student interested in moral philosophy, AI, and rationality. For fun, he likes to play ping pong, badminton, and chess, and occasionally watch 30 episodes of a show on Netflix in one day.",
         image: `${picsDir}/Simon.jpg`
     },
     {
@@ -34,14 +34,14 @@ const execs = [
     {
         name: "Giulia Mouland",
         position: "VP Finance",
-        bio: "Giulia is a first year student at McGill,  studying a combination of Philosophy, Political Science, & Economics. She discovered EA by participating in McGill EA’s Fall 2020 Fellowship. She is drawn to EA for its calculated & reason-driven nature, incorporating its ideals into her everyday life.",
+        bio: "Giulia is a second year student at McGill,  studying a combination of Philosophy, Political Science, & Economics. She discovered EA by participating in McGill EA’s Fall 2020 Fellowship. She is drawn to EA for its calculated & reason-driven nature, incorporating its ideals into her everyday life.",
         image: `${picsDir}/Giulia.jpg`
     },
     {
         name: "Josh Katofsky",
         position: "VP Logistics",
-        bio: "Josh is a 3rd year Computer Science student with a dual minor in Political Science and Philosophy. He is particularly interested in AI ethics and sustainability, and aims to pursue a career in software for social good.",
-        image: `${picsDir}/Josh.png`
+        bio: "Josh is a fourth year Computer Science student with a dual minor in Political Science and Philosophy. He is particularly interested in AI ethics and sustainability, and aims to pursue a career in software for social good.",
+        image: `${picsDir}/Josh.jpg`
     },
     {
         name: "Helena Lang",
