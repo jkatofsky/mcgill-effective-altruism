@@ -13,11 +13,11 @@ const ourWork = () => (
             <Row align="start" justify="start" nogutter>
                 <Col sm={12} md={6}>
                     <h3>Effective Altruism Fellowship</h3>
-                    <p>Every fall semester, we run an effective altruism fellowship. Each week during the program, the cohort of fellows will read about a certain topic within effective altruism and then meets to discuss it.</p>
+                    <p>A couple times per year, we run an effective altruism fellowship. Each week during the program, the cohort of fellows will read about a certain topic within effective altruism and then meets to discuss it.</p>
 
                     <p>In the process, fellows gain access to guest speakers/professors and confront moral questions alongside a group of intelligent and open-minded individuals. At the end of the fellowship, the fellows collectively decide on a charity to which they want to donate.</p>
 
-                    <p>Stay posted for information about 2021's fellowship!</p>
+                    <p><b>Applications are open for our summer 2021 fellowhip! <a href="https://forms.gle/xirwmNPWGwXbL7XeA" target="_blank">Apply here</a>.</b></p>
                 </Col>
                 <Col sm={12} md={6}>
                     <figure>
