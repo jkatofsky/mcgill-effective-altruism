@@ -17,8 +17,6 @@ const home = () => (
         </h1>
         <h2 style={{ fontStyle: 'italic' }}>Doing good better.</h2>
         <hr />
-        <h2><a href="https://forms.gle/xirwmNPWGwXbL7XeA" target="_blank">Summer 2021 fellowship applications now open!</a></h2>
-        <hr />
         <p>Effective altruism is about answering one simple question: how can we use our resources to <b>help others the most</b>? We use <b>evidence and careful analysis</b> to find the very best causes to work on.</p>
 
         <p>But it's no use answering the question unless you act on it. Effective altruism is about following through. It's about <b>being generous with your time and your money</b> to do the most good you can.</p>

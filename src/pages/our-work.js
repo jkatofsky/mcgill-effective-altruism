@@ -17,7 +17,7 @@ const ourWork = () => (
 
                     <p>In the process, fellows gain access to guest speakers/professors and confront moral questions alongside a group of intelligent and open-minded individuals. At the end of the fellowship, the fellows collectively decide on a charity to which they want to donate.</p>
 
-                    <p><b>Applications are open for our summer 2021 fellowhip! <a href="https://forms.gle/xirwmNPWGwXbL7XeA" target="_blank">Apply here</a>.</b></p>
+                    <p>We are currently running a Summer 2021 fellowship alongside <a href="https://www.facebook.com/EANorthcyprus55/" target="_blank">EA North Cyprus</a>. Stay tuned for information on future fellowships!</p>
                 </Col>
                 <Col sm={12} md={6}>
                     <figure>
@@ -30,7 +30,7 @@ const ourWork = () => (
 
         {/* TODO: embedd the events tab of the Facebook here? */}
         <h3>Weekly Meetings</h3>
-        <p>In the winter semester, we run weekly meetings <b>Wednesdays at 6:30PM Montréal time</b>, open to all. Similarly to the fellowship, we discuss a different topic each week, often relating to current events or current debates within effective altruism. Occaisonally, we will invite guest speakers as well! For the topics of upcoming weeks and the Zoom information, check out our <a href="https://www.facebook.com/eamcgill/events/" target="_blank">Facebook events</a>!</p>
+        <p>When not hosting a felloship, we run weekly meetings <b>Wednesdays at 6:30PM Montréal time</b>, open to all. Similarly to the fellowship, we discuss a different topic each week, often relating to current events or current debates within effective altruism. Occaisonally, we will invite guest speakers as well! For the topics of upcoming weeks and the Zoom information, check out our <a href="https://www.facebook.com/eamcgill/events/" target="_blank">Facebook events</a>!</p>
 
         <h3>EA Library</h3>
         <p>We have many books relating to effective altruism, and lend them out to anybody who wants to learn more! When on-campus life picks up, we will have an in-person location for them. In the meantime, we will mail you the books. You can check out a book <a href="https://docs.google.com/spreadsheets/d/1ysIw8SSH5f2AkR1wSUyO38KxC2oDWXTHxcSqlZP0zao/edit?usp=sharing" target="_blank">here</a>.</p>
