@@ -44,12 +44,6 @@ const execs = [
         image: `${picsDir}/Josh.jpg`
     },
     {
-        name: "Helena Lang",
-        position: "VP Affairs",
-        bio: "Helena is an Honours Philosophy student at McGill with minors in Economics and Political Science. She first stumbled upon EA in high school and has continued to fall into deeper rabbit holes since, especially on AI ethics and philosophy of science. Her interests include all things philosophy, political economy (and critiques thereof), and creative writing. At the moment it looks like she will be applying to grad school in philosophy.",
-        image: ""
-    },
-    {
         name: "Ben Chancey",
         position: "VP Internal",
         bio: "Ben is currently a student at Collège Jean-de-Brébeuf, originally from Ottawa. Upon graduating, he intends on attending McGill University, majoring in law, philosophy, political science, or some combination of the three. His primary interests lie in moral philosophy, literature, cycling, and gaming.",
