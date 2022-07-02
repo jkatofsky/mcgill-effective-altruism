@@ -17,6 +17,22 @@ const home = () => (
         </h1>
         <h2 style={{ fontStyle: 'italic' }}>Doing good better.</h2>
         <hr />
+        
+        <Container fluid className='grid-container'>
+
+        <Row justify="center" nogutter>
+
+            <Col lg={4}>
+                <Link href="/the-fellowship">
+                    <div className={`${styles['fellowship-button']} hover-raise`}>
+                        <span>Apply to the Fellowship &rarr;</span>
+                    </div>
+                </Link>
+            </Col>
+
+        </Row>
+        </Container>
+
         <p>Effective altruism is about answering one simple question: how can we use our resources to <b>help others the most</b>? We use <b>evidence and careful analysis</b> to find the very best causes to work on.</p>
 
         <p>But it's no use answering the question unless you act on it. Effective altruism is about following through. It's about <b>being generous with your time and your money</b> to do the most good you can.</p>
@@ -26,32 +42,32 @@ const home = () => (
 
         <Container fluid className='grid-container'>
 
-            <Row justify="center" nogutter>
+        <Row justify="center" nogutter>
 
-                <Col lg={4}>
-                    <Link href="/about-ea">
-                        <div className={`${styles['homepage-button']} hover-raise`}>
-                            <span>Learn about EA &rarr;</span>
-                        </div>
-                    </Link>
-                </Col>
+            <Col lg={4}>
+                <Link href="/about-ea">
+                    <div className={`${styles['homepage-button']} hover-raise`}>
+                        <span>Learn about EA &rarr;</span>
+                    </div>
+                </Link>
+            </Col>
 
-                <Col lg={4}>
-                    <Link href="/our-work">
-                        <div className={`${styles['homepage-button']} hover-raise`}>
-                            <span>Discover our work &rarr;</span>
-                        </div>
-                    </Link>
-                </Col>
+            <Col lg={4}>
+                <Link href="/our-work">
+                    <div className={`${styles['homepage-button']} hover-raise`}>
+                        <span>Discover our work &rarr;</span>
+                    </div>
+                </Link>
+            </Col>
 
-                <Col lg={4}>
-                    <Link href="/connect">
-                        <div className={`${styles['homepage-button']} hover-raise`}>
-                            <span>Connect with us &rarr;</span>
-                        </div>
-                    </Link>
-                </Col>
-            </Row>
+            <Col lg={4}>
+                <Link href="/connect">
+                    <div className={`${styles['homepage-button']} hover-raise`}>
+                        <span>Connect with us &rarr;</span>
+                    </div>
+                </Link>
+            </Col>
+        </Row>
         </Container>
     </div>
 );
