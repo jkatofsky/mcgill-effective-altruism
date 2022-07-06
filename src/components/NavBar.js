@@ -4,11 +4,12 @@ import styles from '../styles/NavBar.module.css';
 import { slide as BurgerMenu } from 'react-burger-menu';
 
 const links = [
-    { name: "About EA", link: "/about-ea" },
-    { name: "Our Work", link: "/our-work" },
-    { name: "Our Team", link: "/team" },
-    { name: "Connect With Us", link: "/connect" },
-    { name: "FAQs", link: "/faq" },
+    { name: "About EA", link: "/about-ea", primary: false },
+    { name: "Our Work", link: "/our-work", primary: false },
+    { name: "Our Team", link: "/team", primary: false },
+    { name: "Connect With Us", link: "/connect", primary: false },
+    { name: "FAQs", link: "/faq", primary: false },
+    { name: "Intro Fellowship", link: "/the-fellowship", primary: true}
 ]
 
 // TODO: Centred EA logo in burger menu above other links? (Make jsx variable out of the link-wrapped image)
@@ -67,9 +68,9 @@ class NavBar extends Component {
                                 <NavLink activeClassName={styles['active-link']}
                                     key={entry.link} href={entry.link}>
 
-                                    <span className={`hover-raise  ${styles['link']} ${styles['text-link']} ${styles['desktop-link']}`}>
-                                        {entry.name}
-                                    </span>
+                                        <span className={`hover-raise  ${styles['link']} ${styles['text-link']} ${styles['desktop-link']}`}>
+                                            {entry.name}
+                                        </span>                              
 
                                 </NavLink>
                             ))}
